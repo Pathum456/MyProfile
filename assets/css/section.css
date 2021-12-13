@@ -3,6 +3,9 @@
     @create - 12/8/2021 - 9:18 AM
     @since - V0.0.1
 **/
+section{
+    border: 2px solid black;
+}
 #section_1 {
     background-color: black;
 
