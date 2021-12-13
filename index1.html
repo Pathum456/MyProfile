@@ -87,8 +87,71 @@
             position: absolute;
             width: 50vw;
             height: 35vh;
-
             left: 15%;
+        }
+
+        main > section:nth-child(1) > section > ul > li {
+            display: inline;
+        }
+
+        main > section:nth-child(1) > section > div {
+            width: 62px;
+            height: 67px;
+            background-color: black;
+            position: absolute;
+            bottom: 10px;
+            display: inline;
+        }
+
+        .test {
+            padding-left: 40px;
+            font-size: 36px;
+            color: #000000;
+        }
+
+        #logo {
+            /*padding-top: 1000px;*/
+            width: 100%;
+            height: 100%;
+        }
+
+        #touchOnMe {
+            background-color: whitesmoke;
+            border: 1px solid black;
+            position: relative;
+            background-color: whitesmoke;
+        }
+
+        .contact {
+            padding-left: 100px;
+            padding-top: 10px;
+            width: 62px;
+            height: 67px;
+        }
+
+        footer > address > div#kaleesha {
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            right: 20px;
+            margin: auto;
+            width: 500px;
+            height: 600px;
+        }
+
+        .icon {
+            width: 100%;
+            height: 100%;
+        }
+
+        #fb_icon {
+            position: absolute;
+            left: 70px;
+        }
+        #linkedin_icon{
+            position: absolute;
+            left:140px;
+            background-color: white;
         }
     </style>
 </head>
@@ -120,11 +183,49 @@
 </pre>
         </div>
         <section>
-            <div></div>
+
+            <div style="z-index: 150;"><a href="https://twitter.com/Pathum_Kaleesha"><img alt="twitter"
+                                                                                          class="icon"
+                                                                                          src="assets/images/icon/twitter.png">
+            </a>
+            </div>
+
+            <div id="fb_icon" style="background-color:white;border-radius: 35px; z-index: 200;"><a
+                    href="https://www.facebook.com/profile.php?id=100074316473313"><img alt="facebook"
+                                                                                        class="icon"
+                                                                                        src="assets/images/icon/1218127_fb_icon.png">
+            </a>
+            </div>
+
+            <div id="linkedin_icon" style="z-index: 200;"><a href="https://www.linkedin.com/in/pathum-kaleesha-8ba571225/"><img alt="linkedin" class="icon" src="assets/images/icon/4373678_linkedin_logo_logos_icon.png">
+            </a>
+            </div>
+
         </section>
 
     </section>
 </main>
-<footer></footer>
+<footer>
+    <address id="touchOnMe">
+        <br>
+        <div>
+            <h1 style="font-size: 48px;">Contact</h1>
+
+            <img alt="mail" class="contact" src="assets/images/icon/mail.png"><a class="test"
+                                                                                 href="mailto:pathumkaleesha618@gmail.com"
+        >pathumkaleesha618@gmail.com</a>
+            <br>
+            <img alt="whatsapp" class="contact" src="assets/images/icon/whatsapp.png"><a class="test"
+                                                                                         href="tel:0777921473">+94777921473</a>
+            <br>
+            <img alt="whatsapp" class="contact" src="assets/images/icon/whatsapp.png"> <a class="test"
+                                                                                          href="https://goo.gl/maps/oGvhRKMzRvapLh2V9">Galle,Southern
+            Province,Sri Lanka</a>
+        </div>
+        <div id="kaleesha">
+            <img align="right" alt="logo" id="logo" src="assets/images/kaleesha.png">
+        </div>
+    </address>
+</footer>
 </body>
 </html>
