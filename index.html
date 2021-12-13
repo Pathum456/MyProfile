@@ -1,54 +1,211 @@
 <!DOCTYPE html>
+
+<!--
+    @author _ pathum_Kaleesha
+    @created - 11/24/2021 - 11:34 AM
+    @version - 1.0.1 - MyProfile
+-->
+
 <html>
 <head>
     <title>My Profile </title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
     <link href="assets/images/icon/me.png" rel="icon">
+    <link href="assets/css/section.css" rel="stylesheet">
     <meta content="pathum, kaleesha, pathum kaleesha, my profile" name="keywords">
     <meta content="This is for me.." name="description">
     <meta content="width=device-width initial-scale=1" name="viewport">
     <meta content="red" name="theme-color">
+    <!--<link rel="stylesheet" href="script.js">-->
+    <link href="assets/css/slider.css" rel="stylesheet">
+    <style>
+        #h2 {
+            color: #F0F9FF;
+            padding-left: 100px;
+        }
+
+        pre {
+            color: black;
+        }
+
+        div {
+            background-color: green;
+            border: 2px solid black;
+            height: 300px;
+            font-size: 300px;
+        }
+
+        .contact {
+            padding-left: 100px;
+            padding-top: 10px;
+            width: 62px;
+            height: 67px;
+        }
+
+        .test {
+            padding-left: 40px;
+            font-size: 36px;
+            color: #000000;
+        }
+
+        #logo {
+            /*padding-top: 1000px;*/
+            width: 600px;
+        }
+
+        #touchOnMe {
+            background-color: whitesmoke;
+        }
+
+        #profile {
+            padding-left: 910px;
+            zoom: unset;
+        }
+
+    </style>
 </head>
 <body>
 <header style="background-color: #F0F9FF">
     <nav>
         <hr>
-        <pre><h1 style="font-family: 'Berlin Sans FB'"><b> Home                                                                             About Me    Education    Skills    Activities    Gallery Page    Touch On ME </b></h1></pre>
+        <pre><h1 style="font-family: 'Berlin Sans FB' ; font-size: 25px"><b> Home                                                                    About Me    Education    Skills    Activities    Gallery Page    Touch On ME </b></h1></pre>
         <hr>
     </nav>
 </header>
 <main>
-    <section style="background-color: black">
+    <hr>
+    <section id="section_1">
+        <!-- <img alt="profile" src="assets/images/profilePictures/myProfile.jpeg" width="400">
+         <pre><h2 align="center" id="h2">       Hi... I am Pathum Kaleesha <br>
+                          Working as a <b>Developer</b>.....</h2></pre>
+         -->
+        <figure>
+            <figcaption>
+                <pre><h2 id="h2">       Hi... I am Pathum Kaleesha <br>
+                         Working as a <b>Developer</b>.....</h2></pre>
+            </figcaption>
+            <img alt="profile" id="profile" src="assets/images/profilePictures/myProfile.jpeg"
+                 width="400">
+
+        </figure>
+
+    </section>
+    <hr>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+    <section>
+
+    </section>
+    <section>
+        <h1 style="font-size: 48px;">Gallery Page</h1>
+
+        <div class="slideshow-container" style="width: 400px; height: 400px">
+            <div class="mySlides fade">
+                <img class="img" src="assets/images/profilePictures/myProfile.jpeg">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="img" src="assets/images/kaleesha%20new.png">
+            </div>
+
+            <div class="mySlides fade">
+                <img class="img" src="assets/images/music.jpg">
+            </div>
+
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+            <!-- <div style="text-align:center; height: 10px; background-color: white" >
+                 <span class="dot" onclick="currentSlide(1)" ></span>
+                 <span class="dot" onclick="currentSlide(2)"></span>
+                 <span class="dot" onclick="currentSlide(3)"></span>
+             </div>-->
+        </div>
         <br>
-        <img alt="profile picture"  src="assets/images/profilePictures/WhatsApp%20Image%202021-11-04%20at%2012.08.17.jpeg" width="320" height="292" align="right"> <pre><h2 style="color: aliceblue" align="center">       Hi... I am Pathum Kaleesha <br>
-                        Working as a <b>Developer</b>.....</h2></pre><br>
-        <img src="" alt="facebook icon">
-        <img src="" alt="whatsapp icon">
-        <img src="" alt="linkedIn icon">
-        <img alt="twitter icon" src="assets/images/icon/twitter.png">
-        <hr>
-    </section>
-    <section>
 
-    </section>
-    <section>
 
-    </section>
-    <section>
+        <script>
+            var slideIndex = 1;
+            showSlides(slideIndex);
 
-    </section>
-    <section>
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
 
-    </section>
-    <section>
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
 
-    </section>
-    <section>
-
+            function showSlides(n) {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                if (n > slides.length) {
+                    slideIndex = 1
+                }
+                if (n < 1) {
+                    slideIndex = slides.length
+                }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
     </section>
 </main>
 <footer>
-    <address>
+    <hr>
+    <address id="touchOnMe">
+        <br>
 
+        <h1 style="font-size: 48px;">Contact</h1>
+
+        <img alt="mail" class="contact" src="assets/images/icon/mail.png"><a class="test"
+                                                                             href="mailto:pathumkaleesha618@gmail.com"
+    >pathumkaleesha618@gmail.com</a>
+        <br>
+        <img alt="whatsapp" class="contact" src="assets/images/icon/whatsapp.png"><a class="test"
+                                                                                     href="tel:0777921473">+94777921473</a>
+        <br>
+        <img alt="whatsapp" class="contact" src="assets/images/icon/whatsapp.png"> <a class="test"
+                                                                                      href="https://goo.gl/maps/oGvhRKMzRvapLh2V9">Galle,Southern
+        Province,Sri Lanka</a>
+        <img align="right" alt="logo" id="logo" src="assets/images/kaleesha%20new.png">
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <hr>
     </address>
 </footer>
 </body>
