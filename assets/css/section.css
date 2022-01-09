@@ -4,7 +4,9 @@
     @since - V0.0.1
 **/
 section{
-    border: 2px solid black;
+   /* border: 2px solid black;*/
+    overflow: hidden;
+
 }
 #section_1 {
     background-color: black;
