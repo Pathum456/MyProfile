@@ -1,13 +1,14 @@
-<!DOCTYPE html>
-
 <!--
-    @author _ pathum_Kaleesha
-    @created - 11/24/2021 - 11:34 AM
-    @version - 1.0.1 - MyProfile
+/**
+    * @author _ Pathum_Kaleesha
+    * @created - 12/13/2021 - 7:00 PM
+    * @since - v0.1.0 - CSS
+/**
 -->
-
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>My Profile </title>
     <link href="assets/css/normalize.css" rel="stylesheet">
     <link href="assets/images/icon/me.png" rel="icon">
@@ -18,28 +19,90 @@
     <meta content="red" name="theme-color">
     <!--<link rel="stylesheet" href="script.js">-->
     <link href="assets/css/slider.css" rel="stylesheet">
+
     <style>
-        #h2 {
-            color: #F0F9FF;
-            padding-left: 100px;
+        main {
+            overflow: hidden;
+            background-color: #E7E7E7;
         }
 
-        pre {
-            color: black;
+        header {
+            background-color: #F0F9FF;
+            height: 80px;
+            position: relative;
+            border: 1px solid black;
         }
 
-        div {
-            background-color: green;
-            border: 2px solid black;
-            height: 300px;
-            font-size: 300px;
+        header > nav > ul:nth-child(1) {
+            list-style: none;
+            right: 30px;
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            margin: auto;
         }
 
-        .contact {
-            padding-left: 100px;
-            padding-top: 10px;
+        header > nav > ul:nth-child(2) {
+            list-style: none;
+            left: 10px;
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            padding-left: 0;
+        }
+
+        header > nav > ul > li {
+            font-family: Berlin Sans FB;
+            font-size: 25px;
+            display: inline;
+        }
+
+        header > nav > ul > li.nav {
+            padding-right: 30px;
+        }
+
+        main > section:nth-child(1) {
+            position: relative;
+            width: 100vw;
+            height: 45vh;
+            background-color: black;
+        }
+
+        main > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            width: 25%;
+            height: 100%;
+            right: 0px;
+            top: 0;
+        }
+
+        main > section:nth-child(1) > div:nth-child(1) > img {
+            /*width: 334px;*/
+            width: 100%;
+            height: 100%;
+        }
+
+        main > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            width: 50vw;
+            height: 35vh;
+            left: 15%;
+        }
+
+        main > section:nth-child(1) > section > ul > li {
+            display: inline;
+        }
+
+        main > section:nth-child(1) > section > div {
             width: 62px;
             height: 67px;
+            background-color: black;
+            position: absolute;
+            bottom: 10px;
+            display: inline;
         }
 
         .test {
@@ -50,162 +113,1519 @@
 
         #logo {
             /*padding-top: 1000px;*/
-            width: 600px;
+            width: 100%;
+            height: 100%;
         }
 
         #touchOnMe {
             background-color: whitesmoke;
+            border: 1px solid black;
+            position: relative;
+            background-color: whitesmoke;
         }
 
-        #profile {
-            padding-left: 910px;
-            zoom: unset;
+        .contact {
+            padding-left: 100px;
+            padding-top: 10px;
+            width: 62px;
+            height: 67px;
+        }
+
+        footer > address > div#kaleesha {
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            right: 20px;
+            margin: auto;
+            width: 500px;
+            height: 600px;
+        }
+
+        .icon {
+            width: 100%;
+            height: 100%;
+        }
+
+        #fb_icon {
+            position: absolute;
+            left: 70px;
+        }
+
+        #linkedin_icon {
+            position: absolute;
+            left: 140px;
+            background-color: white;
+        }
+
+        main > section:nth-child(2) {
+            width: 100vw;
+            height: 80vh;
+            position: relative;
+            background-color: #273C75;
+        }
+
+        main > section:nth-child(2) > div:nth-child(1) {
+            width: 30%;
+            height: 80%;
+            top: 0;
+            left: 10px;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        main > section:nth-child(2) > div:nth-child(1) > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        main > section:nth-child(2) > div:nth-child(2) {
+            width: 50vw;
+            height: 10vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        main > section:nth-child(2) > div:nth-child(2) > h2 {
+            padding-left: 50%;
+            width: 100%;
+            height: 100%;
+        }
+
+        main > section:nth-child(2) > div:nth-child(3) {
+            width: 60%;
+            height: 60%;
+
+            position: absolute;
+            left: 30vw;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        main > section:nth-child(2) > div:nth-child(3) > div > ul {
+            list-style: none;
+        }
+
+        main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+
+        main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) > ul > li > h4 {
+            color: #ffffff;
+            font-family: Risque;
+            cursor: none;
+            font-size: 24px;
+        }
+
+        .bio {
+            width: 24px;
+            height: 28px;
+        }
+
+        main > section:nth-child(3) {
+            position: relative;
+        }
+
+        main > section:nth-child(3) > div {
+
+            width: 100vw;
+            height: 70vh;
+        }
+
+        main > section:nth-child(3) > div:nth-child(2) > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        main > section:nth-child(3) > div:nth-child(3) {
+            width: 70%;
+            height: 75%;
+            position: absolute;
+            z-index: 1000;
+            top: 20%;
+            left: 10%;
+        }
+
+        main > section:nth-child(3) > div:nth-child(3) > img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        main > section:nth-child(4) {
+            position: relative;
+            width: 100vw;
+            height: 80vh;
+            background-color: #E7E7E7;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) {
+            border: 2px black;
+            position: absolute;
+            left: 0;
+            top: 20%;
+            width: 45vw;
+            height: 63.5vh;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) {
+            height: 63.5vh;
+            position: absolute;
+            /*right: 0;*/
+            top: 20%;
+            width: 48.5vw;
+            right: 1.5%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(4) {
+            border: 3px solid #000000;
+            position: absolute;
+            top: 20%;
+            left: 47.5%;
+            height: 70vh;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > h3:nth-child(1) {
+            position: relative;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 35%;
+            margin: auto;
+            font-size: 36px;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > h3:nth-child(1) {
+            position: relative;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 25%;
+            margin: auto;
+            font-size: 36px;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(1) section:nth-child(1) {
+            width: 400%;
+            height: 200px;
+            position: relative;
+            left: 0;
+            display: flex;
+            animation-name: slideme;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes slideme {
+            0% {
+                transform: translateX(-10%);
+            }
+            33.3% {
+                transform: translateX(-43%);
+            }
+            66.6% {
+                transform: translateX(-77%);
+            }
+
+            100% {
+                transform: translateX(-11%);
+            }
+
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) {
+            height: 47.5%;
+            width: 25%;
+            position: absolute;
+            left: 35%;
+            top: 15%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) > section {
+            width: 333.99%;
+            height: 100%;
+
+            position: absolute;
+            left: 35%;
+
+            animation-name: slideme;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div:nth-child(1) {
+
+            background: url("assets/images/icon/java.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+
+            background: url("assets/images/icon/JS.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/icon/mysql.png");
+            background-size: 100% 100%;
+        }
+
+        /*-------------*/
+        /*main > section:nth-child(4) > div:nth-child(3) > div:nth-child(1) section:nth-child(1) {
+            width: 400%;
+            height: 200px;
+
+            position: relative;
+            left: 0;
+            display: flex;
+            animation-name: slideme;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }*/
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) {
+            width: 400%;
+            height: 200px;
+
+            position: relative;
+            left: 0;
+            display: flex;
+            animation-name: slideme;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) {
+            height: 47.5%;
+            width: 25%;
+            position: absolute;
+            left: 35%;
+            top: 15%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) > section:nth-child(1) > div:nth-child(1) {
+            background: url("assets/images/icon/java.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+            background: url("assets/images/icon/JS.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/icon/mysql.png");
+            background-size: 100% 100%;
+        }
+
+        /*-----------------------------*/
+
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) {
+            height: 37%;
+            width: 25%;
+            position: absolute;
+            left: 5%;
+            top: 20%;
+            overflow: hidden;
+
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) > section:nth-child(1) {
+            width: 333.99%;
+            height: 100%;
+            position: absolute;
+            left: 35%;
+            animation-name: slideme2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+
+        @keyframes slideme2 {
+            0% {
+                transform: translateX(-10%);
+            }
+            33.3% {
+                transform: translateX(-43%);
+            }
+            66.6% {
+                transform: translateX(-77%);
+            }
+
+            100% {
+                transform: translateX(-11%);
+            }
+
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) > section:nth-child(1) > div:nth-child(1) {
+            background: url("assets/images/icon/mysql.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+            background: url("assets/images/icon/java.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/icon/JS.png");
+            background-size: 100% 100%;
+        }
+
+        /*--------------------------------*/
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) {
+            width: 25%;
+            height: 37%;
+            overflow: hidden;
+            position: absolute;
+            right: 10%;
+            top: 20%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) > section:nth-child(1) {
+            width: 333.99%;
+            height: 100%;
+            position: absolute;
+            left: 35%;
+            animation-name: slideme2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
+            background: url("assets/images/icon/JS.png");
+            background-size: 100% 100%;
+        }
+
+        /* main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
+             background: url("assets/images/icon/mysql.png");
+
+             background-size: 100% 100%;
+         }
+ */
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+            background: url("assets/images/icon/mysql.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/icon/java.png");
+            background-size: 100% 100%;
+        }
+
+        /*Tool slider div(2)*/
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) {
+            height: 37%;
+            width: 25%;
+            position: absolute;
+            left: 5%;
+            top: 20%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > section:nth-child(1) {
+            width: 333.99%;
+            height: 100%;
+            position: absolute;
+            left: 35%;
+            animation-name: slideme2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > section:nth-child(1) > div:nth-child(1) {
+            background: url("assets/images/icon/mysql.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+            background: url("assets/images/icon/java.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/icon/JS.png");
+            background-size: 100% 100%;
+        }
+
+        /*main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) {
+            width: 333.99%;
+            height: 100%;
+
+            position: absolute;
+            left: 35%;
+
+            animation-name: slideme2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+        }
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
+            background: url("assets/images/icon/JS.png");
+
+            background-size: 100% 100%;
+        }
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+            background: url("assets/images/icon/mysql.png");
+
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/icon/java.png");
+            background-size: 100% 100%;
+        }
+*/
+
+        /*Tool slider div(3)*/
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) {
+            width: 25%;
+            height: 37%;
+            overflow: hidden;
+            position: absolute;
+            right: 10%;
+            top: 20%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) {
+            width: 333.99%;
+            height: 100%;
+            position: absolute;
+            left: 35%;
+            animation-name: slideme2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
+            background: url("assets/images/icon/JS.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+            background: url("assets/images/icon/mysql.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/icon/java.png");
+            background-size: 100% 100%;
+        }
+
+        /*--------------------------------*/
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(5) {
+            border-radius: 100%;
+            width: 6%;
+            height: 10%;
+            background-color: red;
+            position: absolute;
+            left: 44%;
+            top: 75%;
+            animation-name: circle1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(6) {
+            border-radius: 100%;
+            width: 4%;
+            height: 8%;
+            background-color: red;
+            position: absolute;
+            left: 33%;
+            top: 75%;
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(7) {
+            border-radius: 100%;
+            width: 4%;
+            height: 8%;
+            background-color: red;
+            position: absolute;
+            left: 58%;
+            top: 75%;
+            animation-name: circle2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes circle {
+            0% {
+                /*transform: translateX(-10%);*/
+                background-color: white;
+            }
+            29% {
+                /*transform: translateX(-43%);*/
+                background-color: blue;
+            }
+            66.6% {
+                /*transform: translateX(-77%);*/
+                background-color: white;
+            }
+
+            100% {
+                /*transform: translateX(-11%);*/
+                background-color: white;
+            }
+        }
+
+        @keyframes circle1 {
+            0% {
+                /*transform: translateX(-10%);*/
+                background-color: blue;
+            }
+            29% {
+                /*transform: translateX(-43%);*/
+                background-color: white;
+            }
+            66.6% {
+                /*transform: translateX(-77%);*/
+                background-color: white;
+            }
+
+            100% {
+                /*transform: translateX(-11%);*/
+                background-color: blue;
+            }
+        }
+
+        @keyframes circle2 {
+            0% {
+                /*transform: translateX(-10%);*/
+                background-color: white;
+            }
+            29% {
+                /*transform: translateX(-43%);*/
+                background-color: white;
+            }
+            66.6% {
+                /*transform: translateX(-77%);*/
+                background-color: blue;
+            }
+
+            100% {
+                /*transform: translateX(-11%);*/
+                background-color: white;
+            }
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(5) {
+            border-radius: 100%;
+            width: 6%;
+            height: 10%;
+            background-color: red;
+            position: absolute;
+            left: 44%;
+            top: 75%;
+            animation-name: circle1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(6) {
+            border-radius: 100%;
+            width: 4%;
+            height: 8%;
+            background-color: red;
+            position: absolute;
+            left: 33%;
+            top: 75%;
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(7) {
+            border-radius: 100%;
+            width: 4%;
+            height: 8%;
+            background-color: red;
+            position: absolute;
+            left: 57%;
+            top: 75%;
+            animation-name: circle2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        /*----------section 5---------------*/
+        main > section:nth-child(5) {
+            position: relative;
+            width: 100vw;
+            height: 800px;
+            background: url("assets/images/project.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(2) {
+            border-radius: 7%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 35%;
+            height: 50%;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+        main > section:nth-child(5) > div:nth-child(2) > section:nth-child(1) {
+            width: 400%;
+            height: 100%;
+            position: absolute;
+            animation-name: projectSlider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(5) > div:nth-child(2) > section:nth-child(1) > div {
+            width: 25%;
+            height: 100%;
+            position: absolute;
+        }
+
+        @keyframes projectSlider {
+            0% {
+                transform: translateX(0%);
+            }
+            25% {
+                transform: translateX(-25%);
+            }
+            50% {
+                transform: translateX(-50%);
+            }
+            75% {
+                transform: translateX(-75%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+
+        }
+
+        main > section:nth-child(5) > div:nth-child(2) > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            background: url("assets/images/pos.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            left: 25%;
+            background: url("assets/images/hotel.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(2) > section:nth-child(1) > div:nth-child(3) {
+            position: absolute;
+            left: 50%;
+            background: url("assets/images/hibernate.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(2) > section:nth-child(1) > div:nth-child(4) {
+            position: absolute;
+            left: 75%;
+            background: url("assets/images/parking.png");
+            background-size: 100% 100%;
+        }
+
+        /*-----------------*/
+        main > section:nth-child(5) > div:nth-child(3) {
+            border-radius: 7%;
+            position: absolute;
+            left: 10%;
+            top: 30%;
+            bottom: 0;
+            right: 0;
+            width: 25%;
+            height: 40%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(5) > div:nth-child(3) > section:nth-child(1) {
+            width: 400%;
+            height: 100%;
+            position: absolute;
+            animation-name: projectSlider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(5) > div:nth-child(3) > section:nth-child(1) > div {
+            width: 25%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(5) > div:nth-child(3) > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            background: url("assets/images/parking.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(3) > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            left: 25%;
+            background: url("assets/images/pos.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(3) > section:nth-child(1) > div:nth-child(3) {
+            position: absolute;
+            left: 50%;
+            background: url("assets/images/hotel.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(3) > section:nth-child(1) > div:nth-child(4) {
+            position: absolute;
+            left: 75%;
+            background: url("assets/images/hibernate.png");
+            background-size: 100% 100%;
+        }
+
+        /*------------*/
+        main > section:nth-child(5) > div:nth-child(4) {
+            border-radius: 7%;
+            position: absolute;
+            left: 65%;
+            top: 30%;
+            bottom: 0;
+            right: 0;
+            width: 25%;
+            height: 40%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(5) > div:nth-child(4) > section:nth-child(1) {
+            width: 400%;
+            height: 100%;
+            position: absolute;
+            animation-name: projectSlider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(5) > div:nth-child(4) > section:nth-child(1) > div {
+            width: 25%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(5) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            background: url("assets/images/hotel.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(4) > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            left: 25%;
+            background: url("assets/images/hibernate.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(4) > section:nth-child(1) > div:nth-child(3) {
+            position: absolute;
+            left: 50%;
+            background: url("assets/images/parking.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(4) > section:nth-child(1) > div:nth-child(4) {
+            position: absolute;
+            left: 75%;
+            background: url("assets/images/pos.png");
+            background-size: 100% 100%;
+        }
+
+        /*-------------------------*/
+        main > section:nth-child(5) > div:nth-child(5) {
+            border-radius: 100%;
+            position: absolute;
+            left: 50vw;
+            top: 80%;
+            bottom: 0;
+            right: 0;
+            width: 2%;
+            height: 4%;
+            background-color: black;
+            animation-name: projectSliderCircle;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes projectSliderCircle {
+            0% {
+                background-color: blue;
+            }
+            25% {
+                background-color: white;
+            }
+            50% {
+                background-color: white;
+            }
+            75% {
+                background-color: white;
+            }
+            100% {
+                background-color: blue;
+            }
+        }
+
+        /*--------*/
+        main > section:nth-child(5) > div:nth-child(6) {
+            border-radius: 100%;
+            position: absolute;
+            left: 35vw;
+            top: 80%;
+            bottom: 0;
+            right: 0;
+            width: 2%;
+            height: 4%;
+            background-color: black;
+            animation-name: projectSliderCircle1;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes projectSliderCircle1 {
+            0% {
+                background-color: white;
+            }
+            25% {
+                background-color: blue;
+            }
+            50% {
+                background-color: white;
+            }
+            75% {
+                background-color: white;
+            }
+            100% {
+                background-color: white;
+            }
+        }
+
+        /*-----------*/
+        main > section:nth-child(5) > div:nth-child(7) {
+            border-radius: 100%;
+            position: absolute;
+            left: 65vw;
+            top: 80%;
+            bottom: 0;
+            right: 0;
+            width: 2%;
+            height: 4%;
+            background-color: black;
+            animation-name: projectSliderCircle2;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes projectSliderCircle2 {
+            0% {
+                background-color: white;
+            }
+            25% {
+                background-color: white;
+            }
+            50% {
+                background-color: white;
+            }
+            75% {
+                background-color: blue;
+            }
+            100% {
+                background-color: white;
+            }
+        }
+
+        /*------Lable--------*/
+        /*main > section:nth-child(5) > input:nth-child(8) {
+            position: absolute;
+            left: 45vw;
+            top: 76%;
+            bottom: 0;
+            right: 0;
+
+            width: 12%;
+            height: 3%;
+
+            animation-name: lable;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes lable {
+            0% {
+                font-size: 10%;
+                opacity: 1;
+                content: "POS System"
+
+            }
+            25% {
+                background-color: white;
+            }
+            50% {
+                background-color: white;
+            }
+            75% {
+                background-color: white;
+            }
+            100% {
+                background-color: blue;
+            }
+        }*/
+        /*-----------------*/
+        a:-webkit-any-link {
+            color: -webkit-link;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /*---------section 6------*/
+        main > section:nth-child(6) {
+            height: 100vh;
+            width: 100vw;
+            background-color: #E7E7E7;
+            position: relative;
+        }
+
+        main > section:nth-child(6) > div {
+            width: 20%;
+            height: 30%;
+            border: 1px solid black;
+        }
+
+        main > section:nth-child(6) > div:nth-child(2) {
+            position: absolute;
+            left: 40%;
+            top: 20%;
+            background: url("assets/images/travel.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(6) > div:nth-child(3) {
+            position: absolute;
+            left: 10%;
+            top: 20%;
+            background: url("assets/images/game.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(6) > div:nth-child(4) {
+            position: absolute;
+            right: 10%;
+            top: 20%;
+            background: url("assets/images/music.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(6) > div:nth-child(5) {
+            position: absolute;
+            right: 25%;
+            top: 60%;
+            background: url("assets/images/movies.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(6) > div:nth-child(6) {
+            position: absolute;
+            left: 25%;
+            top: 60%;
+            background: url("assets/images/adventure.png");
+            background-size: 100% 100%;
+        }
+
+        /*------section  7----------*/
+        main > section:nth-child(7) {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background: url("assets/images/gallery.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(7) > h1:nth-child(1) {
+            position: absolute;
+            left: 40vw;
+            top: 0;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) {
+            border-radius: 7%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 35%;
+            height: 50%;
+            z-index: 10;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) > section:nth-child(1) {
+            width: 400%;
+            height: 100%;
+            position: absolute;
+            animation-name: projectSlider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) > section:nth-child(1) > div {
+            width: 25%;
+            height: 100%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            background: url("assets/images/g1.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            background: url("assets/images/g2.png");
+            background-size: 100% 100%;
+            left: 25%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) > section:nth-child(1) > div:nth-child(3) {
+            position: absolute;
+            background: url("assets/images/g3.png");
+            background-size: 100% 100%;
+            left: 50%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) > section:nth-child(1) > div:nth-child(4) {
+            position: absolute;
+            background: url("assets/images/profilePictures/myProfile.jpeg");
+            background-size: 100% 100%;
+            left: 75%;
+        }
+
+        /*-------------------------------*/
+        main > section:nth-child(7) > div:nth-child(3) {
+            border-radius: 7%;
+            position: absolute;
+            left: 10%;
+            top: 30%;
+            bottom: 0;
+            right: 0;
+            width: 25%;
+            height: 40%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(7) > div:nth-child(3) > section:nth-child(1) {
+            width: 400%;
+            height: 100%;
+            position: absolute;
+            animation-name: projectSlider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+
+        }
+
+        main > section:nth-child(7) > div:nth-child(3) > section:nth-child(1) > div {
+            width: 25%;
+            height: 100%;
+            position: absolute;
+        }
+        main > section:nth-child(7) > div:nth-child(3) > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            background: url("assets/images/profilePictures/myProfile.jpeg");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(3) > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            background: url("assets/images/g1.png");
+            background-size: 100% 100%;
+            left: 25%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(3) > section:nth-child(1) > div:nth-child(3) {
+            position: absolute;
+            background: url("assets/images/g2.png");
+            background-size: 100% 100%;
+            left: 50%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(3) > section:nth-child(1) > div:nth-child(4) {
+            position: absolute;
+            background: url("assets/images/g3.png");
+            background-size: 100% 100%;
+            left: 75%;
+        }
+        /*--------------------------------------*/
+        main > section:nth-child(7) > div:nth-child(4) {
+            border-radius: 7%;
+            position: absolute;
+            left: 65%;
+            top: 30%;
+            bottom: 0;
+            right: 0;
+            width: 25%;
+            height: 40%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(7) > div:nth-child(4) > section:nth-child(1) {
+            width: 400%;
+            height: 100%;
+            position: absolute;
+            animation-name: projectSlider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(7) > div:nth-child(4) > section:nth-child(1) > div {
+            width: 25%;
+            height: 100%;
+            position: absolute;
+        }
+        main > section:nth-child(7) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            background: url("assets/images/g2.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(4) > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            background: url("assets/images/g3.png");
+            background-size: 100% 100%;
+            left: 25%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(4) > section:nth-child(1) > div:nth-child(3) {
+            position: absolute;
+            background: url("assets/images/profilePictures/myProfile.jpeg");
+            background-size: 100% 100%;
+            left: 50%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(4) > section:nth-child(1) > div:nth-child(4) {
+            position: absolute;
+            background: url("assets/images/g1.png");
+            background-size: 100% 100%;
+            left: 75%;
         }
 
     </style>
 </head>
 <body>
-<header style="background-color: #F0F9FF">
+<header>
     <nav>
-        <hr>
-        <pre><h1 style="font-family: 'Berlin Sans FB' ; font-size: 25px"><b> Home                                                                    About Me    Education    Skills    Activities    Gallery Page    Touch On ME </b></h1></pre>
-        <hr>
+        <ul>
+            <li class="nav">About Me</li>
+            <li class="nav">Education</li>
+            <li class="nav">Skills</li>
+            <li class="nav"> Activities</li>
+            <li class="nav"> Gallery Page</li>
+            <li>Touch On ME</li>
+        </ul>
+        <ul>
+            <li>Home</li>
+        </ul>
     </nav>
 </header>
 <main>
-    <hr>
-    <section id="section_1">
-        <!-- <img alt="profile" src="assets/images/profilePictures/myProfile.jpeg" width="400">
-         <pre><h2 align="center" id="h2">       Hi... I am Pathum Kaleesha <br>
-                          Working as a <b>Developer</b>.....</h2></pre>
-         -->
-        <figure>
-            <figcaption>
-                <pre><h2 id="h2">       Hi... I am Pathum Kaleesha <br>
-                         Working as a <b>Developer</b>.....</h2></pre>
-            </figcaption>
-            <img alt="profile" id="profile" src="assets/images/profilePictures/myProfile.jpeg"
-                 width="400">
-
-        </figure>
-
-    </section>
-    <hr>
     <section>
-
-    </section>
-    <section>
-
-    </section>
-    <section>
-
-    </section>
-    <section>
-
-    </section>
-    <section>
-
-    </section>
-    <section>
-        <h1 style="font-size: 48px;">Gallery Page</h1>
-
-        <div class="slideshow-container" style="width: 400px; height: 400px">
-            <div class="mySlides fade">
-                <img class="img" src="assets/images/profilePictures/myProfile.jpeg">
-            </div>
-
-            <div class="mySlides fade">
-                <img class="img" src="assets/images/kaleesha%20new.png">
-            </div>
-
-            <div class="mySlides fade">
-                <img class="img" src="assets/images/music.jpg">
-            </div>
-
-
-            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-            <!-- <div style="text-align:center; height: 10px; background-color: white" >
-                 <span class="dot" onclick="currentSlide(1)" ></span>
-                 <span class="dot" onclick="currentSlide(2)"></span>
-                 <span class="dot" onclick="currentSlide(3)"></span>
-             </div>-->
+        <div>
+            <img alt="" src="assets/images/profilePictures/myProfile.jpeg">
         </div>
-        <br>
+        <div>
+<pre>
+    <h2 id="h2" style="color:#F0F9FF;">       Hi... I am Pathum Kaleesha <br>
+                         Working as a <b>Developer</b>.....</h2>
+</pre>
+        </div>
+        <section>
 
+            <div style="z-index: 150;"><a href="https://twitter.com/Pathum_Kaleesha"><img alt="twitter"
+                                                                                          class="icon"
+                                                                                          src="assets/images/icon/twitter.png">
+            </a>
+            </div>
 
-        <script>
-            var slideIndex = 1;
-            showSlides(slideIndex);
+            <div id="fb_icon" style="background-color:white;border-radius: 35px; z-index: 200;"><a
+                    href="https://www.facebook.com/profile.php?id=100074316473313"><img alt="facebook"
+                                                                                        class="icon"
+                                                                                        src="assets/images/icon/1218127_fb_icon.png">
+            </a>
+            </div>
 
-            function plusSlides(n) {
-                showSlides(slideIndex += n);
-            }
+            <div id="linkedin_icon" style="z-index: 200;"><a
+                    href="https://www.linkedin.com/in/pathum-kaleesha-8ba571225/"><img alt="linkedin" class="icon"
+                                                                                       src="assets/images/icon/4373678_linkedin_logo_logos_icon.png">
+            </a>
+            </div>
 
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
+        </section>
 
-            function showSlides(n) {
-                var i;
-                var slides = document.getElementsByClassName("mySlides");
-                var dots = document.getElementsByClassName("dot");
-                if (n > slides.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = slides.length
-                }
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-                slides[slideIndex - 1].style.display = "block";
-                dots[slideIndex - 1].className += " active";
-            }
-        </script>
+    </section>
+    <section>
+
+        <div>
+            <img alt="My Bio Picture" src="assets/images/profilePictures/Bio_pic.jpeg">
+        </div>
+        <div><h2>This is me...</h2></div>
+        <div>
+            <div>
+                <ul>
+                    <li><img alt="icon" class="bio" src=""></li>
+                    <li><img alt="icon" class="bio" src=""></li>
+                    <li><img alt="icon" class="bio" src=""></li>
+                    <li><img alt="icon" class="bio" src=""></li>
+                    <li><img alt="icon" class="bio" src=""></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h4> Pathum kaleesha</h4></li>
+                    <li><h4>21 years</h4></li>
+                    <li><h4>pathumkaleesha618@gmail.com</h4></li>
+                    <li><h4>+94-777921473</h4></li>
+                    <li><h4>Galle, Southern Province, Sri Lanka</h4></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+    <section>
+        <h1 style="font-size: 48px; position:absolute;">Education</h1>
+        <div><img alt="" src="assets/images/img.png"></div>
+        <div><img alt="" src="assets/images/Education.png"></div>
+
+    </section>
+    <section>
+        <h1 style="font-size: 48px; ;">Skills</h1>
+        <div style="border: 3px dashed black">
+            <h3>Languages</h3>
+            <div>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div style="border: 3px dashed black">
+            <h3>Tools</h3>
+            <div>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+        <div></div>
+
+    </section>
+    <section>
+        <h1 style="font-size: 48px; "><a href="https://github.com/Pathum456?tab=repositories" style="color: black">Projects</a>
+        </h1>
+        <div>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+
+        </div>
+        <div>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </div>
+        <div>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+
+    </section>
+    <section>
+        <h1 style="font-size: 48px;">Activities</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section>
+        <h1 style="font-size: 48px;">Gallery</h1>
+        <div>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </div>
+        <div>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </div>
+        <div>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </div>
     </section>
 </main>
 <footer>
-    <hr>
     <address id="touchOnMe">
         <br>
+        <div>
+            <h1 style="font-size: 48px;">Contact</h1>
 
-        <h1 style="font-size: 48px;">Contact</h1>
-
-        <img alt="mail" class="contact" src="assets/images/icon/mail.png"><a class="test"
-                                                                             href="mailto:pathumkaleesha618@gmail.com"
-    >pathumkaleesha618@gmail.com</a>
-        <br>
-        <img alt="whatsapp" class="contact" src="assets/images/icon/whatsapp.png"><a class="test"
-                                                                                     href="tel:0777921473">+94777921473</a>
-        <br>
-        <img alt="whatsapp" class="contact" src="assets/images/icon/whatsapp.png"> <a class="test"
-                                                                                      href="https://goo.gl/maps/oGvhRKMzRvapLh2V9">Galle,Southern
-        Province,Sri Lanka</a>
-        <img align="right" alt="logo" id="logo" src="assets/images/kaleesha%20new.png">
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <hr>
+            <img alt="mail" class="contact" src="assets/images/icon/mail.png"><a class="test"
+                                                                                 href="mailto:pathumkaleesha618@gmail.com"
+        >pathumkaleesha618@gmail.com</a>
+            <br>
+            <img alt="whatsapp" class="contact" src="assets/images/icon/whatsapp.png"><a class="test"
+                                                                                         href="tel:0777921473">+94777921473</a>
+            <br>
+            <img alt="whatsapp" class="contact" src="assets/images/icon/whatsapp.png"> <a class="test"
+                                                                                          href="https://goo.gl/maps/oGvhRKMzRvapLh2V9">Galle,Southern
+            Province,Sri Lanka</a>
+        </div>
+        <div id="kaleesha">
+            <img align="right" alt="logo" id="logo" src="assets/images/kaleesha.png">
+        </div>
     </address>
 </footer>
 </body>
