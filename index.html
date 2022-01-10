@@ -19,8 +19,10 @@
     <meta content="red" name="theme-color">
     <!--<link rel="stylesheet" href="script.js">-->
     <link href="assets/css/slider.css" rel="stylesheet">
+    <link href="assets/css/mediaQuery.css" rel="stylesheet">
 
     <style>
+
         main {
             overflow: hidden;
             background-color: #E7E7E7;
@@ -1310,6 +1312,7 @@
             height: 100%;
             position: absolute;
         }
+
         main > section:nth-child(7) > div:nth-child(3) > section:nth-child(1) > div:nth-child(1) {
             position: absolute;
             background: url("assets/images/profilePictures/myProfile.jpeg");
@@ -1336,6 +1339,7 @@
             background-size: 100% 100%;
             left: 75%;
         }
+
         /*--------------------------------------*/
         main > section:nth-child(7) > div:nth-child(4) {
             border-radius: 7%;
@@ -1363,6 +1367,7 @@
             height: 100%;
             position: absolute;
         }
+
         main > section:nth-child(7) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
             position: absolute;
             background: url("assets/images/g2.png");
@@ -1390,6 +1395,70 @@
             left: 75%;
         }
 
+        @media all and (max-width: 425px) {
+            /*------------header-----------------*/
+            header > nav > ul > li {
+                font-size: 11px;
+            }
+
+            header > nav > ul:nth-child(1) {
+                right: 2px;
+            }
+
+            header > nav > ul > li.nav {
+                padding-right: 4px;
+            }
+
+            header {
+                height: 40px;
+            }
+
+            /*-----------section 1-----------*/
+            main > section:nth-child(1) > div:nth-child(1) {
+                width: 26%;
+                height: 38%;
+            }
+
+            main > section:nth-child(1) > div:nth-child(2) {
+                position: absolute;
+                width: 15vw;
+                height: 18vh;
+                left: -3%;
+                top: 37%;
+            }
+
+            pre {
+                font-family: monospace, monospace;
+                font-size: 11px;
+                position: relative;
+                left: 0
+            }
+
+            main > section:nth-child(1) > section > div {
+                width: 52px;
+                height: 57px;
+                background-color: black;
+                position: absolute;
+                bottom: 10px;
+                display: inline;
+            }
+
+            main > section:nth-child(1) {
+                position: relative;
+                width: 100vw;
+                height: 25vh;
+                background-color: black;
+            }
+
+            /*--------Section 2---------*/
+            main > section:nth-child(2) {
+                width: 100vw;
+                height: 38vh;
+                position: relative;
+                background-color: #273C75;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -1399,6 +1468,7 @@
             <li class="nav">About Me</li>
             <li class="nav">Education</li>
             <li class="nav">Skills</li>
+            <li class="nav">Projects</li>
             <li class="nav"> Activities</li>
             <li class="nav"> Gallery Page</li>
             <li>Touch On ME</li>
