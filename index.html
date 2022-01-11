@@ -1419,7 +1419,9 @@
                 width: 60%;
                 height: 45%;
                 bottom: 0;
-                left: 0;
+                left: 13%;
+                top: 0;
+                right: 0;
                 margin: auto;
                 z-index: 10;
             }
@@ -1429,16 +1431,17 @@
             }
 
             main > section:nth-child(1) > div:nth-child(2) > pre:nth-child(1) {
-                font-size: 12px;
+                font-size: 10px;
+                padding-left: 27px;
             }
 
             #divpf {
-                border: 4px solid ;
+                border: 4px solid;
                 position: absolute;
                 width: 60%;
                 height: 45%;
                 bottom: 0;
-                left: 0;
+                left: 13%;
                 right: 0;
                 top: 0;
                 margin: auto;
@@ -1456,11 +1459,13 @@
                     border-color: #2222d7;
 
                 }
-                25%{
+                25% {
                     border-color: red;
-                } 50%{
+                }
+                50% {
                     border-color: yellow;
-                }75%{
+                }
+                75% {
                     border-color: white;
                 }
                 100% {
@@ -1468,21 +1473,21 @@
 
                 }
             }#divpf2 {
-                border: 4px solid ;
-                position: absolute;
-                width: 60%;
-                height: 45%;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                top: 0;
-                margin: auto;
-                animation-name: divplay2;
-                transform: rotate(-360deg);
-                animation-duration:10s;
-                animation-iteration-count: infinite;
+                 border: 4px solid;
+                 position: absolute;
+                 width: 60%;
+                 height: 45%;
+                 bottom: 0;
+                 left: 13%;
+                 right: 0;
+                 top: 0;
+                 margin: auto;
+                 animation-name: divplay2;
+                 transform: rotate(-360deg);
+                 animation-duration: 10s;
+                 animation-iteration-count: infinite;
 
-            }
+             }
 
             @keyframes divplay2 {
                 0% {
@@ -1491,11 +1496,13 @@
                     border-color: #2222d7;
 
                 }
-                25%{
+                25% {
                     border-color: red;
-                } 50%{
+                }
+                50% {
                     border-color: yellow;
-                }75%{
+                }
+                75% {
                     border-color: white;
                 }
                 100% {
@@ -1503,7 +1510,62 @@
 
                 }
             }
+            /*-----section 3*/
+            main > section:nth-child(2) > div:nth-child(1) {
+                width: 65%;
+                height: 35%;
+                top: 95px;
+                left: 78px;
+                 margin: 0;
+                position: absolute;
+            }
+            main > section:nth-child(2) > div:nth-child(3) > div > ul {
+                display: none;
+            }
+            main > section:nth-child(2) > div:nth-child(2) > h2 {
+                padding-left: 0;
+                font-size: 31px;
+            }
+            /*------section  6-----------*/
+            main > section:nth-child(6) > div {
+                width: 100vw;
+                height: 17.5%;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid black;
 
+            }
+            main > section:nth-child(6) > div:nth-child(2) {
+                position: static;
+            }main > section:nth-child(6) > div:nth-child(3) {
+                position: static;
+            }main > section:nth-child(6) > div:nth-child(4) {
+                position: static;
+            }main > section:nth-child(6) > div:nth-child(5) {
+                position: static;
+            }main > section:nth-child(6) > div:nth-child(6) {
+                position: static;
+            }
+             /*-------------section 7--------------*/
+            main > section:nth-child(7) {
+                position: relative;
+                width: 100vw;
+                height: 39vh;
+                background: url(assets/images/gallery.png);
+                background-size: 100% 100%;
+            }
+            main > section:nth-child(5) {
+                position: relative;
+                width: 100vw;
+                height: 501px;
+                background: url(assets/images/project.png);
+                background-size: 100% 100%;
+            }
+            main > section:nth-child(7) > h1:nth-child(1) {
+                position: absolute;
+                left: 26vw;
+                top: -9px;
+            }
         }
 
 
