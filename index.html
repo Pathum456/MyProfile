@@ -1396,68 +1396,116 @@
         }
 
         @media all and (max-width: 425px) {
-            /*------------header-----------------*/
-            header > nav > ul > li {
-                font-size: 11px;
+            /*----header-----*/
+            header > nav > ul:nth-child(2) {
+                display: none;
             }
 
             header > nav > ul:nth-child(1) {
-                right: 3px;
+                right: 0;
+                left: -24px;
+                top: 13px;
             }
 
             header > nav > ul > li.nav {
-                padding-right: 4px;
+                padding-left: 0;
+                font-size: 13px;
+                padding-right: 0;
             }
 
-            header {
-                height: 40px;
-            }
-
-            /*-----------section 1-----------*/
+            /*--------section 1*/
             main > section:nth-child(1) > div:nth-child(1) {
-                width: 26%;
-                height: 38%;
+                position: absolute;
+                width: 60%;
+                height: 45%;
+                bottom: 0;
+                left: 0;
+                margin: auto;
+                z-index: 10;
             }
 
             main > section:nth-child(1) > div:nth-child(2) {
+                left: -14%;
+            }
+
+            main > section:nth-child(1) > div:nth-child(2) > pre:nth-child(1) {
+                font-size: 12px;
+            }
+
+            #divpf {
+                border: 4px solid ;
                 position: absolute;
-                width: 15vw;
-                height: 18vh;
-                left: -3%;
-                top: 37%;
+                width: 60%;
+                height: 45%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                margin: auto;
+                animation-name: divplay;
+                transform: rotate(360deg);
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+
             }
 
-            pre {
-                font-family: monospace, monospace;
-                font-size: 11px;
-                position: relative;
-                left: 0
-            }
+            @keyframes divplay {
+                0% {
 
-            main > section:nth-child(1) > section > div {
-                width: 52px;
-                height: 57px;
-                background-color: black;
+                    transform: rotate(-90deg);
+                    border-color: #2222d7;
+
+                }
+                25%{
+                    border-color: red;
+                } 50%{
+                    border-color: yellow;
+                }75%{
+                    border-color: white;
+                }
+                100% {
+
+
+                }
+            }#divpf2 {
+                border: 4px solid ;
                 position: absolute;
-                bottom: 10px;
-                display: inline;
+                width: 60%;
+                height: 45%;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                top: 0;
+                margin: auto;
+                animation-name: divplay2;
+                transform: rotate(-360deg);
+                animation-duration:10s;
+                animation-iteration-count: infinite;
+
             }
 
-            main > section:nth-child(1) {
-                position: relative;
-                width: 100vw;
-                height: 25vh;
-                background-color: black;
+            @keyframes divplay2 {
+                0% {
+
+                    transform: rotate(90deg);
+                    border-color: #2222d7;
+
+                }
+                25%{
+                    border-color: red;
+                } 50%{
+                    border-color: yellow;
+                }75%{
+                    border-color: white;
+                }
+                100% {
+
+
+                }
             }
 
-            /*--------Section 2---------*/
-            main > section:nth-child(2) {
-                width: 100vw;
-                height: 38vh;
-                position: relative;
-                background-color: #273C75;
-            }
         }
+
 
     </style>
 </head>
@@ -1471,7 +1519,7 @@
             <li class="nav">Projects</li>
             <li class="nav"> Activities</li>
             <li class="nav"> Gallery Page</li>
-            <li>Touch On ME</li>
+            <li class="nav">Touch On ME</li>
         </ul>
         <ul>
             <li>Home</li>
@@ -1509,7 +1557,8 @@
                                                                                        src="assets/images/icon/4373678_linkedin_logo_logos_icon.png">
             </a>
             </div>
-
+            <div id="divpf"></div>
+            <div id="divpf2"></div>
         </section>
 
     </section>
