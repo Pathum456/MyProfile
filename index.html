@@ -34,6 +34,11 @@
             position: relative;
             border: 1px solid black;
         }
+        header > nav > ul>li:hover{
+            color: darkblue;
+            font-size: 30px;
+
+        }
 
         main > section:nth-child(2) > p:nth-child(4) {
             display: none;
@@ -61,7 +66,7 @@
         }
 
         header > nav > ul > li {
-            font-family: Berlin Sans FB;
+
             font-size: 25px;
             display: inline;
         }
@@ -200,6 +205,8 @@
             padding-left: 50%;
             width: 100%;
             height: 100%;
+            text-decoration: underline;
+            font-size: 35px;
         }
 
         main > section:nth-child(2) > div:nth-child(3) {
@@ -221,7 +228,7 @@
         main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
             position: absolute;
             top: 0;
-            right: 0;
+           /* right: 0;*/
         }
 
         main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) > ul > li > h4 {
@@ -439,19 +446,19 @@
         }
 
         main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) > section:nth-child(1) > div:nth-child(1) {
-            background: url("assets/images/icon/java.png");
+            background: url("assets/images/icon/intelig.png");
             background-size: 100% 100%;
         }
 
         main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) {
             left: 33.3%;
-            background: url("assets/images/icon/JS.png");
+            background: url("assets/images/icon/node.png");
             background-size: 100% 100%;
         }
 
         main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) > section:nth-child(1) > div:nth-child(3) {
             left: 66.6%;
-            background: url("assets/images/icon/mysql.png");
+            background: url("assets/images/d1.png");
             background-size: 100% 100%;
         }
 
@@ -595,19 +602,19 @@
         }
 
         main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > section:nth-child(1) > div:nth-child(1) {
-            background: url("assets/images/icon/mysql.png");
+            background: url("assets/images/d1.png");
             background-size: 100% 100%;
         }
 
         main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > section:nth-child(1) > div:nth-child(2) {
             left: 33.3%;
-            background: url("assets/images/icon/java.png");
+            background: url("assets/images/icon/intelig.png");
             background-size: 100% 100%;
         }
 
         main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > section:nth-child(1) > div:nth-child(3) {
             left: 66.6%;
-            background: url("assets/images/icon/JS.png");
+            background: url("assets/images/icon/node.png");
             background-size: 100% 100%;
         }
 
@@ -673,19 +680,19 @@
         }
 
         main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
-            background: url("assets/images/icon/JS.png");
+            background: url("assets/images/icon/node.png");
             background-size: 100% 100%;
         }
 
         main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(2) {
             left: 33.3%;
-            background: url("assets/images/icon/mysql.png");
+            background: url("assets/images/d1.png");
             background-size: 100% 100%;
         }
 
         main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(3) {
             left: 66.6%;
-            background: url("assets/images/icon/java.png");
+            background: url("assets/images/icon/intelig.png");
             background-size: 100% 100%;
         }
 
@@ -1801,21 +1808,21 @@ color: transparent;
 <header>
     <nav>
         <ul>
-            <li class="nav">About Me</li>
-            <li class="nav">Education</li>
-            <li class="nav">Skills</li>
-            <li class="nav">Projects</li>
-            <li class="nav"> Activities</li>
-            <li class="nav"> Gallery Page</li>
-            <li class="nav">Touch On ME</li>
+            <li class="nav"><a href="#s2">About Me</a></li>
+            <li class="nav"><a href="#s3">Education</a></li>
+            <li class="nav"><a href="#s4">Skills</a></li>
+            <li class="nav"><a href="#s5">Projects</a></li>
+            <li class="nav"><a href="#s6">Activities</a></li>
+            <li class="nav"><a href="#s7">Gallery Page</a></li>
+            <li class="nav"><a href="#f1">Touch On ME</a></li>
         </ul>
         <ul>
-            <li>Home</li>
+            <li><a href="#s1">Home</a></li>
         </ul>
     </nav>
 </header>
 <main>
-    <section>
+    <section id="s1">
         <div>
             <img alt="" src="assets/images/profilePictures/myProfile.jpeg">
         </div>
@@ -1850,7 +1857,7 @@ color: transparent;
         </section>
 
     </section>
-    <section>
+    <section id="s2">
 
         <div>
             <img alt="My Bio Picture" src="assets/images/profilePictures/Bio_pic.jpeg">
@@ -1859,20 +1866,20 @@ color: transparent;
         <div>
             <div>
                 <ul>
+                  <!--  <li><img alt="icon" class="bio" src="assets/images/icon/1.png" style="width: 48px; height: 48px;" ></li>
+                    <li><img alt="icon" class="bio" src="assets/images/icon/2.png"></li>
                     <li><img alt="icon" class="bio" src=""></li>
                     <li><img alt="icon" class="bio" src=""></li>
-                    <li><img alt="icon" class="bio" src=""></li>
-                    <li><img alt="icon" class="bio" src=""></li>
-                    <li><img alt="icon" class="bio" src=""></li>
+                    <li><img alt="icon" class="bio" src=""></li>-->
                 </ul>
             </div>
             <div>
                 <ul>
-                    <li><h4> Pathum kaleesha</h4></li>
-                    <li><h4>21 years</h4></li>
-                    <li><h4>pathumkaleesha618@gmail.com</h4></li>
-                    <li><h4>+94-777921473</h4></li>
-                    <li><h4>Galle, Southern Province, Sri Lanka</h4></li>
+                    <li><h4> Name : Pathum kaleesha</h4></li>
+                    <li><h4>Age   : 21 years</h4></li>
+                    <li><h4>Mail : pathumkaleesha618@gmail.com</h4></li>
+                    <li><h4>Contact : +94-777921473</h4></li>
+                    <li><h4>Address : Galle, Southern Province, Sri Lanka</h4></li>
                 </ul>
             </div>
 
@@ -1883,7 +1890,7 @@ color: transparent;
             sheet language like 'CSS', design tools like 'JavaFX' and framework like 'Hibernate'.
         </p>
     </section>
-    <section>
+    <section id="s3">
         <h1 style="font-size: 48px; position:absolute;">Education</h1>
         <div><img alt="" src="assets/images/img.png"></div>
         <div><!--<img alt="" src="assets/images/Education.png">--></div>
@@ -1905,7 +1912,7 @@ color: transparent;
         <hr>
         <hr>
     </section>
-    <section>
+    <section id="s4">
         <h1 style="font-size: 48px; ;">Skills</h1>
         <div>
             <h3>Languages</h3>
@@ -1965,7 +1972,7 @@ color: transparent;
         <div></div>
 
     </section>
-    <section>
+    <section id="s5">
         <h1 style="font-size: 48px; ">Projects
         </h1>
         <div>
@@ -2001,7 +2008,7 @@ color: transparent;
 
         </div>
     </section>
-    <section>
+    <section id="s6">
         <h1 style="font-size: 48px;">Activities</h1>
         <div></div>
         <div></div>
@@ -2009,7 +2016,7 @@ color: transparent;
         <div></div>
         <div></div>
     </section>
-    <section>
+    <section id="s7">
         <h1 style="font-size: 48px;">Gallery</h1>
         <div>
             <section>
@@ -2038,7 +2045,7 @@ color: transparent;
 
     </section>
 </main>
-<footer>
+<footer id="f1">
     <address id="touchOnMe">
         <br>
         <div>
