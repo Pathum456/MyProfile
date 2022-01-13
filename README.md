@@ -16,4 +16,5 @@ I have use html & css for devolping the web.
 <br>
 <li style="font-size: 20px"><b>000Web host URL</b> :- <a href="https://kaleesha.000webhostapp.com/" target="_blank">https://kaleesha.000webhostapp.com/</a></li>
 </ul>
-![ Image OF web](assets/readme/readme.png)
+
+![image of My Web](assets/readme/readme.png)
