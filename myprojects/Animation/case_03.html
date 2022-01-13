@@ -1,0 +1,105 @@
+<!--
+/**
+    * @author _ Pathum_Kaleesha
+    * @created - 12/27/2021 - 10:11 AM
+    * @since - v0.1.0 - CSS
+/**
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Animation Case 2</title>
+    <style>
+        body{
+            background-color: skyblue;
+        }
+        main {
+            width: 700px;
+            height: 400px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            overflow: hidden;
+
+
+        }
+
+        @keyframes slideme {
+            0% {
+                transform: translateX(0);
+            }
+            25% {
+                transform: translateX(-25%);
+            }
+            50% {
+                transform: translateX(-50%);
+            }
+            75% {
+                transform: translateX(-75%);
+            }
+            100% {
+                transform: translateX(25);
+            }
+
+        }
+
+        main > section {
+            width: 400%;
+            height: 100%;
+            display: flex;
+            animation-name: slideme;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            border: 1px solid black;
+
+        }
+
+        main > section > div {
+            width: 100%;
+
+
+        }
+
+        section > div:nth-child(1) {
+            background: url("assets/image/1.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(2) {
+            background: url("assets/image/2.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(3) {
+            background: url("assets/image/3.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        section > div:nth-child(4) {
+            background: url("assets/image/4.png");
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+</head>
+<body>
+
+<main>
+    <section>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+</main>
+
+
+</body>
+</html>

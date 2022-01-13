@@ -1,0 +1,68 @@
+<!--
+/**
+    * @author _ Pathum_Kaleesha
+    * @created - 12/27/2021 - 9:11 AM
+    * @since - v0.1.0 - CSS
+/**
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>Case 3</title>
+    <style>
+        section {
+            border-radius: 10%;
+            width: 200px;
+            height: 100px;
+            position: relative;
+            background-color: blue;
+            animation-name: testOne;
+            animation-duration: 10s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+
+        @keyframes testOne {
+            0% {
+                background-color: blue;
+                left: 0;
+                top: 0;
+
+            }
+            25% {
+                background-color: yellow;
+                left: 900px;
+                top: 0;
+                transform: rotate(180deg);
+
+            }
+            50% {
+                background-color: red;
+                top: 425px;
+                left: 900px;
+                transform: rotate(180deg)
+            }
+            75% {
+                background-color: deeppink;
+                left: 0;
+                top: 425px;
+                transform: rotate(180deg);
+            }
+            100% {
+
+                background-color: orange;
+                left: 0;
+                top: 0;
+
+            }
+
+        }
+    </style>
+</head>
+<body>
+<section></section>
+</body>
+</html>
