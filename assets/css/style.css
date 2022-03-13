@@ -1,0 +1,60 @@
+/**
+    * @author _ Pathum_Kaleesha
+    * @create - 2022-03-12 - 22.18
+    * @since - v0.1.0 - CSS
+**/
+#booststrap {
+    font-size: 30px;
+    position: absolute;
+    top: 282.5%;
+    left: 5%;
+    color: white;
+}
+
+#pos {
+    position: absolute;
+    left: 5%;
+    top: 300%;
+    width: 20%;
+    height: 35%;
+    border: 1px solid green;
+    background: url("");
+    background-size: 100%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+#pos:hover {
+    left: 3%;
+    top: 297%;
+    width: 25%;
+    height: 40%;
+    transition: all 0.8s;
+    border: 5px solid yellow;
+}
+
+#bc1 {
+    font-size: 35px;
+    color: transparent;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+
+#bview {
+    font-size: 28px;
+    color: transparent;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 69%;
+    margin: auto;
+}

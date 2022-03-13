@@ -1,0 +1,2074 @@
+<!--
+/**
+    * @author _ Pathum_Kaleesha
+    * @created - 12/13/2021 - 7:00 PM
+    * @since - v0.1.0 - CSS
+/**
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile </title>
+    <link href="assets/css/normalize.css" rel="stylesheet">
+    <link href="assets/images/icon/me.png" rel="icon">
+    <link href="assets/css/section.css" rel="stylesheet">
+    <meta content="pathum, kaleesha, pathum kaleesha, my profile,Software Engineer" name="keywords">
+    <meta content="Hii I am Pathum Kaleesha.I'm still learning software engineering at Institute Of Software Engineering
+            (IJSE). I 'm from Galle, Sri Lanka. I can work with programming languages like 'Java','HTML' , style
+            sheet language like 'CSS', design tools like 'JavaFX' and framework like 'Hibernate'.
+        " name="description">
+    <meta content="width=device-width initial-scale=1" name="viewport">
+    <meta content="red" name="theme-color">
+    <!--<link rel="stylesheet" href="script.js">-->
+    <link href="assets/css/slider.css" rel="stylesheet">
+    <link href="assets/css/mediaQuery.css" rel="stylesheet">
+
+    <style>
+
+        main {
+            overflow: hidden;
+            background-color: #E7E7E7;
+        }
+
+        header {
+            background-color: #F0F9FF;
+            height: 80px;
+            position: relative;
+            border: 1px solid black;
+        }
+        header > nav > ul>li:hover{
+            color: darkblue;
+            font-size: 30px;
+
+        }
+
+        main > section:nth-child(2) > p:nth-child(4) {
+            display: none;
+        }
+
+        header > nav > ul:nth-child(1) {
+            list-style: none;
+            right: 30px;
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+        }
+
+        header > nav > ul:nth-child(2) {
+            list-style: none;
+            left: 10px;
+            height: 40px;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            margin: auto;
+            padding-left: 0;
+        }
+
+        header > nav > ul > li {
+
+            font-size: 25px;
+            display: inline;
+        }
+
+        header > nav > ul > li.nav {
+            padding-right: 30px;
+        }
+
+        main > section:nth-child(1) {
+            position: relative;
+            width: 100vw;
+            height: 45vh;
+            background-color: black;
+        }
+
+        main > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            width: 25%;
+            height: 100%;
+            right: 0px;
+            top: 0;
+        }
+
+        main > section:nth-child(1) > div:nth-child(1) > img {
+            /*width: 334px;*/
+            width: 100%;
+            height: 100%;
+        }
+
+        main > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            width: 50vw;
+            height: 35vh;
+            left: 15%;
+        }
+
+        main > section:nth-child(1) > section > ul > li {
+            display: inline;
+        }
+
+        main > section:nth-child(1) > section > div {
+            width: 62px;
+            height: 67px;
+            background-color: black;
+            position: absolute;
+            bottom: 10px;
+            display: inline;
+        }
+
+        .test {
+            padding-left: 40px;
+            font-size: 36px;
+            color: #000000;
+        }
+
+        #logo {
+            /*padding-top: 1000px;*/
+            width: 100%;
+            height: 100%;
+        }
+
+        #touchOnMe {
+            background-color: whitesmoke;
+            border: 1px solid black;
+            position: relative;
+
+        }
+
+        .contact {
+            padding-left: 100px;
+            padding-top: 10px;
+            width: 62px;
+            height: 67px;
+        }
+
+        footer > address > div#kaleesha {
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            right: 20px;
+            margin: auto;
+            width: 500px;
+            height: 600px;
+        }
+
+        .icon {
+            width: 100%;
+            height: 100%;
+        }
+
+        #fb_icon {
+            position: absolute;
+            left: 70px;
+        }
+
+        #linkedin_icon {
+            position: absolute;
+            left: 140px;
+            background-color: white;
+        }
+
+        main > section:nth-child(2) {
+            width: 100vw;
+            height: 80vh;
+            position: relative;
+            background-color: #273C75;
+        }
+
+        main > section:nth-child(2) > div:nth-child(1) {
+            width: 30%;
+            height: 80%;
+            top: 0;
+            left: 10px;
+            bottom: 0;
+            margin: auto;
+            position: absolute;
+        }
+
+        main > section:nth-child(2) > div:nth-child(1) > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        main > section:nth-child(2) > div:nth-child(2) {
+            width: 50vw;
+            height: 10vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+
+        }
+
+        main > section:nth-child(2) > div:nth-child(2) > h2 {
+            padding-left: 50%;
+            width: 100%;
+            height: 100%;
+            text-decoration: underline;
+            font-size: 35px;
+        }
+
+        main > section:nth-child(2) > div:nth-child(3) {
+            width: 60%;
+            height: 60%;
+
+            position: absolute;
+            left: 30vw;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        main > section:nth-child(2) > div:nth-child(3) > div > ul {
+            list-style: none;
+        }
+
+        main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+            position: absolute;
+            top: 0;
+           /* right: 0;*/
+        }
+
+        main > section:nth-child(2) > div:nth-child(3) > div:nth-child(2) > ul > li > h4 {
+            color: #ffffff;
+
+            cursor: none;
+            font-size: 24px;
+        }
+
+        main > section:nth-child(2) > p:nth-child(4) {
+            /*display: none;*/
+        }
+
+        .bio {
+            width: 24px;
+            height: 28px;
+        }
+
+        main > section:nth-child(3) {
+            position: relative;
+        }
+
+        main > section:nth-child(3) > div {
+
+            width: 100vw;
+            height: 70vh;
+        }
+
+        main > section:nth-child(3) > div:nth-child(2) > img {
+            width: 100%;
+            height: 100%;
+        }
+
+        main > section:nth-child(3) > div:nth-child(3) {
+            width: 70%;
+            height: 75%;
+            position: absolute;
+            z-index: 1000;
+            top: 20%;
+            left: 10%;
+        }
+
+        main > section:nth-child(3) > div:nth-child(3) > img {
+            width: 100%;
+            height: 100%;
+        }
+
+
+        main > section:nth-child(4) {
+            position: relative;
+            width: 100vw;
+            height: 80vh;
+            background-color: #E7E7E7;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) {
+            border: 2px black;
+            position: absolute;
+            left: 0;
+            top: 20%;
+            width: 45vw;
+            height: 63.5vh;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) {
+            height: 63.5vh;
+            position: absolute;
+            /*right: 0;*/
+            top: 20%;
+            width: 48.5vw;
+            right: 1.5%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(4) {
+            border: 3px solid #000000;
+            position: absolute;
+            top: 20%;
+            left: 47.5%;
+            height: 70vh;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > h3:nth-child(1) {
+            position: relative;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 35%;
+            margin: auto;
+            font-size: 36px;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > h3:nth-child(1) {
+            position: relative;
+            top: 0;
+            right: 0;
+            left: 0;
+            width: 25%;
+            margin: auto;
+            font-size: 36px;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(1) section:nth-child(1) {
+            width: 400%;
+            height: 200px;
+            position: relative;
+            left: 0;
+            display: flex;
+            animation-name: slideme;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes slideme {
+            0% {
+                transform: translateX(-10%);
+            }
+            33.3% {
+                transform: translateX(-43%);
+            }
+            66.6% {
+                transform: translateX(-77%);
+            }
+
+            100% {
+                transform: translateX(-11%);
+            }
+
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) {
+            height: 47.5%;
+            width: 25%;
+            position: absolute;
+            left: 35%;
+            top: 15%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) > section {
+            width: 333.99%;
+            height: 100%;
+
+            position: absolute;
+            left: 35%;
+
+            animation-name: slideme;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div:nth-child(1) {
+
+            background: url("assets/images/icon/java.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+
+            background: url("assets/images/icon/JS.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(2) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/icon/mysql.png");
+            background-size: 100% 100%;
+        }
+
+        /*-------------*/
+        /*main > section:nth-child(4) > div:nth-child(3) > div:nth-child(1) section:nth-child(1) {
+            width: 400%;
+            height: 200px;
+
+            position: relative;
+            left: 0;
+            display: flex;
+            animation-name: slideme;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }*/
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) {
+            width: 400%;
+            height: 200px;
+
+            position: relative;
+            left: 0;
+            display: flex;
+            animation-name: slideme;
+            animation-duration: 15s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) {
+            height: 47.5%;
+            width: 25%;
+            position: absolute;
+            left: 35%;
+            top: 15%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) > section:nth-child(1) > div:nth-child(1) {
+            background: url("assets/images/icon/intelig.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+            background: url("assets/images/icon/node.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/d1.png");
+            background-size: 100% 100%;
+        }
+
+        /*-----------------------------*/
+
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) {
+            height: 37%;
+            width: 25%;
+            position: absolute;
+            left: 5%;
+            top: 20%;
+            overflow: hidden;
+
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) > section:nth-child(1) {
+            width: 333.99%;
+            height: 100%;
+            position: absolute;
+            left: 35%;
+            animation-name: slideme2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+
+        @keyframes slideme2 {
+            0% {
+                transform: translateX(-10%);
+            }
+            33.3% {
+                transform: translateX(-43%);
+            }
+            66.6% {
+                transform: translateX(-77%);
+            }
+
+            100% {
+                transform: translateX(-11%);
+            }
+
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) > section:nth-child(1) > div:nth-child(1) {
+            background: url("assets/images/icon/mysql.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+            background: url("assets/images/icon/java.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(3) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/icon/JS.png");
+            background-size: 100% 100%;
+        }
+
+        /*--------------------------------*/
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) {
+            width: 25%;
+            height: 37%;
+            overflow: hidden;
+            position: absolute;
+            right: 10%;
+            top: 20%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) > section:nth-child(1) {
+            width: 333.99%;
+            height: 100%;
+            position: absolute;
+            left: 35%;
+            animation-name: slideme2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
+            background: url("assets/images/icon/JS.png");
+            background-size: 100% 100%;
+        }
+
+        /* main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
+             background: url("assets/images/icon/mysql.png");
+
+             background-size: 100% 100%;
+         }
+ */
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+            background: url("assets/images/icon/mysql.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(4) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/icon/java.png");
+            background-size: 100% 100%;
+        }
+
+        /*Tool slider div(2)*/
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) {
+            height: 37%;
+            width: 25%;
+            position: absolute;
+            left: 5%;
+            top: 20%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > section:nth-child(1) {
+            width: 333.99%;
+            height: 100%;
+            position: absolute;
+            left: 35%;
+            animation-name: slideme2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > section:nth-child(1) > div:nth-child(1) {
+            background: url("assets/images/d1.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+            background: url("assets/images/icon/intelig.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(3) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/icon/node.png");
+            background-size: 100% 100%;
+        }
+
+        /*main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) {
+            width: 333.99%;
+            height: 100%;
+
+            position: absolute;
+            left: 35%;
+
+            animation-name: slideme2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+        }
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
+            background: url("assets/images/icon/JS.png");
+
+            background-size: 100% 100%;
+        }
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+            background: url("assets/images/icon/mysql.png");
+
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/icon/java.png");
+            background-size: 100% 100%;
+        }
+*/
+
+        /*Tool slider div(3)*/
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) {
+            width: 25%;
+            height: 37%;
+            overflow: hidden;
+            position: absolute;
+            right: 10%;
+            top: 20%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) {
+            width: 333.99%;
+            height: 100%;
+            position: absolute;
+            left: 35%;
+            animation-name: slideme2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div {
+            width: 33.3%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
+            background: url("assets/images/icon/node.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(2) {
+            left: 33.3%;
+            background: url("assets/images/d1.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(4) > section:nth-child(1) > div:nth-child(3) {
+            left: 66.6%;
+            background: url("assets/images/icon/intelig.png");
+            background-size: 100% 100%;
+        }
+
+        /*--------------------------------*/
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(5) {
+            border-radius: 100%;
+            width: 6%;
+            height: 10%;
+            background-color: red;
+            position: absolute;
+            left: 44%;
+            top: 75%;
+            animation-name: circle1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(6) {
+            border-radius: 100%;
+            width: 4%;
+            height: 8%;
+            background-color: red;
+            position: absolute;
+            left: 33%;
+            top: 75%;
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(7) {
+            border-radius: 100%;
+            width: 4%;
+            height: 8%;
+            background-color: red;
+            position: absolute;
+            left: 58%;
+            top: 75%;
+            animation-name: circle2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes circle {
+            0% {
+                /*transform: translateX(-10%);*/
+                background-color: white;
+            }
+            29% {
+                /*transform: translateX(-43%);*/
+                background-color: blue;
+            }
+            66.6% {
+                /*transform: translateX(-77%);*/
+                background-color: white;
+            }
+
+            100% {
+                /*transform: translateX(-11%);*/
+                background-color: white;
+            }
+        }
+
+        @keyframes circle1 {
+            0% {
+                /*transform: translateX(-10%);*/
+                background-color: blue;
+            }
+            29% {
+                /*transform: translateX(-43%);*/
+                background-color: white;
+            }
+            66.6% {
+                /*transform: translateX(-77%);*/
+                background-color: white;
+            }
+
+            100% {
+                /*transform: translateX(-11%);*/
+                background-color: blue;
+            }
+        }
+
+        @keyframes circle2 {
+            0% {
+                /*transform: translateX(-10%);*/
+                background-color: white;
+            }
+            29% {
+                /*transform: translateX(-43%);*/
+                background-color: white;
+            }
+            66.6% {
+                /*transform: translateX(-77%);*/
+                background-color: blue;
+            }
+
+            100% {
+                /*transform: translateX(-11%);*/
+                background-color: white;
+            }
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(5) {
+            border-radius: 100%;
+            width: 6%;
+            height: 10%;
+            background-color: red;
+            position: absolute;
+            left: 44%;
+            top: 75%;
+            animation-name: circle1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(6) {
+            border-radius: 100%;
+            width: 4%;
+            height: 8%;
+            background-color: red;
+            position: absolute;
+            left: 33%;
+            top: 75%;
+            animation-name: circle;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+
+        main > section:nth-child(4) > div:nth-child(2) > div:nth-child(7) {
+            border-radius: 100%;
+            width: 4%;
+            height: 8%;
+            background-color: red;
+            position: absolute;
+            left: 57%;
+            top: 75%;
+            animation-name: circle2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(4) > div:nth-child(3) > div:nth-child(2) > section:nth-child(1) {
+            width: 333.99%;
+            height: 100%;
+            position: absolute;
+            left: 35%;
+            animation-name: slideme;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        /*----------section 5---------------*/
+        main > section:nth-child(5) {
+            position: relative;
+            width: 100vw;
+            height: 800px;
+            background: url("assets/images/project.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(2) {
+            border-radius: 7%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 35%;
+            height: 50%;
+            overflow: hidden;
+            z-index: 10;
+        }
+
+
+        main > section:nth-child(5) > div:nth-child(2) > section:nth-child(1) {
+            width: 400%;
+            height: 100%;
+            position: absolute;
+            animation-name: projectSlider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(5) > div:nth-child(2) > section:nth-child(1) > div {
+            width: 25%;
+            height: 100%;
+            position: absolute;
+        }
+
+        @keyframes projectSlider {
+            0% {
+                transform: translateX(0%);
+            }
+            25% {
+                transform: translateX(-25%);
+            }
+            50% {
+                transform: translateX(-50%);
+            }
+            75% {
+                transform: translateX(-75%);
+            }
+            100% {
+                transform: translateX(0%);
+            }
+
+        }
+
+        main > section:nth-child(5) > div:nth-child(2) > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            background: url("assets/images/pos.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            left: 25%;
+            background: url("assets/images/hotel.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(2) > section:nth-child(1) > div:nth-child(3) {
+            position: absolute;
+            left: 50%;
+            background: url("assets/images/hibernate.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(2) > section:nth-child(1) > div:nth-child(4) {
+            position: absolute;
+            left: 75%;
+            background: url("assets/images/parking.png");
+            background-size: 100% 100%;
+        }
+
+        /*-----------------*/
+        main > section:nth-child(5) > div:nth-child(3) {
+            border-radius: 7%;
+            position: absolute;
+            left: 10%;
+            top: 30%;
+            bottom: 0;
+            right: 0;
+            width: 25%;
+            height: 40%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(5) > div:nth-child(3) > section:nth-child(1) {
+            width: 400%;
+            height: 100%;
+            position: absolute;
+            animation-name: projectSlider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(5) > div:nth-child(3) > section:nth-child(1) > div {
+            width: 25%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(5) > div:nth-child(3) > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            background: url("assets/images/parking.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(3) > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            left: 25%;
+            background: url("assets/images/pos.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(3) > section:nth-child(1) > div:nth-child(3) {
+            position: absolute;
+            left: 50%;
+            background: url("assets/images/hotel.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(3) > section:nth-child(1) > div:nth-child(4) {
+            position: absolute;
+            left: 75%;
+            background: url("assets/images/hibernate.png");
+            background-size: 100% 100%;
+        }
+
+        /*------------*/
+        main > section:nth-child(5) > div:nth-child(4) {
+            border-radius: 7%;
+            position: absolute;
+            left: 65%;
+            top: 30%;
+            bottom: 0;
+            right: 0;
+            width: 25%;
+            height: 40%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(5) > div:nth-child(4) > section:nth-child(1) {
+            width: 400%;
+            height: 100%;
+            position: absolute;
+            animation-name: projectSlider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(5) > div:nth-child(4) > section:nth-child(1) > div {
+            width: 25%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(5) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            background: url("assets/images/hotel.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(4) > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            left: 25%;
+            background: url("assets/images/hibernate.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(4) > section:nth-child(1) > div:nth-child(3) {
+            position: absolute;
+            left: 50%;
+            background: url("assets/images/parking.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(5) > div:nth-child(4) > section:nth-child(1) > div:nth-child(4) {
+            position: absolute;
+            left: 75%;
+            background: url("assets/images/pos.png");
+            background-size: 100% 100%;
+        }
+
+        /*-------------------------*/
+        main > section:nth-child(5) > div:nth-child(5) {
+            border-radius: 100%;
+            position: absolute;
+            left: 50vw;
+            top: 80%;
+            bottom: 0;
+            right: 0;
+            width: 2%;
+            height: 4%;
+            background-color: black;
+            animation-name: projectSliderCircle;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes projectSliderCircle {
+            0% {
+                background-color: blue;
+            }
+            25% {
+                background-color: white;
+            }
+            50% {
+                background-color: white;
+            }
+            75% {
+                background-color: white;
+            }
+            100% {
+                background-color: blue;
+            }
+        }
+
+        /*--------*/
+        main > section:nth-child(5) > div:nth-child(6) {
+            border-radius: 100%;
+            position: absolute;
+            left: 35vw;
+            top: 80%;
+            bottom: 0;
+            right: 0;
+            width: 2%;
+            height: 4%;
+            background-color: black;
+            animation-name: projectSliderCircle1;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes projectSliderCircle1 {
+            0% {
+                background-color: white;
+            }
+            25% {
+                background-color: blue;
+            }
+            50% {
+                background-color: white;
+            }
+            75% {
+                background-color: white;
+            }
+            100% {
+                background-color: white;
+            }
+        }
+
+        /*-----------*/
+        main > section:nth-child(5) > div:nth-child(7) {
+            border-radius: 100%;
+            position: absolute;
+            left: 65vw;
+            top: 80%;
+            bottom: 0;
+            right: 0;
+            width: 2%;
+            height: 4%;
+            background-color: black;
+            animation-name: projectSliderCircle2;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes projectSliderCircle2 {
+            0% {
+                background-color: white;
+            }
+            25% {
+                background-color: white;
+            }
+            50% {
+                background-color: white;
+            }
+            75% {
+                background-color: blue;
+            }
+            100% {
+                background-color: white;
+            }
+        }
+
+        /*------Lable--------*/
+        /*main > section:nth-child(5) > input:nth-child(8) {
+            position: absolute;
+            left: 45vw;
+            top: 76%;
+            bottom: 0;
+            right: 0;
+
+            width: 12%;
+            height: 3%;
+
+            animation-name: lable;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes lable {
+            0% {
+                font-size: 10%;
+                opacity: 1;
+                content: "POS System"
+
+            }
+            25% {
+                background-color: white;
+            }
+            50% {
+                background-color: white;
+            }
+            75% {
+                background-color: white;
+            }
+            100% {
+                background-color: blue;
+            }
+        }*/
+        /*-----------------*/
+        a:-webkit-any-link {
+            color: -webkit-link;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        /*---------section 6------*/
+        main > section:nth-child(6) {
+            height: 100vh;
+            width: 100vw;
+            background-color: #E7E7E7;
+            position: relative;
+        }
+
+        main > section:nth-child(6) > div {
+            width: 20%;
+            height: 30%;
+            border: 1px solid black;
+        }
+
+        main > section:nth-child(6) > div:nth-child(2) {
+            position: absolute;
+            left: 40%;
+            top: 20%;
+            background: url("assets/images/travel.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(6) > div:nth-child(3) {
+            position: absolute;
+            left: 10%;
+            top: 20%;
+            background: url("assets/images/game.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(6) > div:nth-child(4) {
+            position: absolute;
+            right: 10%;
+            top: 20%;
+            background: url("assets/images/music.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(6) > div:nth-child(5) {
+            position: absolute;
+            right: 25%;
+            top: 60%;
+            background: url("assets/images/movies.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(6) > div:nth-child(6) {
+            position: absolute;
+            left: 25%;
+            top: 60%;
+            background: url("assets/images/adventure.png");
+            background-size: 100% 100%;
+        }
+
+        /*------section  7----------*/
+        main > section:nth-child(7) {
+            position: relative;
+            width: 100vw;
+            height: 100vh;
+            background: url("assets/images/gallery.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(7) > h1:nth-child(1) {
+            position: absolute;
+            left: 40vw;
+            top: 0;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) {
+            border-radius: 7%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 35%;
+            height: 50%;
+            z-index: 10;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) > section:nth-child(1) {
+            width: 400%;
+            height: 100%;
+            position: absolute;
+            animation-name: projectSlider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) > section:nth-child(1) > div {
+            width: 25%;
+            height: 100%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            background: url("assets/images/g1.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            background: url("assets/images/g2.png");
+            background-size: 100% 100%;
+            left: 25%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) > section:nth-child(1) > div:nth-child(3) {
+            position: absolute;
+            background: url("assets/images/g3.png");
+            background-size: 100% 100%;
+            left: 50%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(2) > section:nth-child(1) > div:nth-child(4) {
+            position: absolute;
+            background: url("assets/images/profilePictures/myProfile.jpeg");
+            background-size: 100% 100%;
+            left: 75%;
+        }
+
+        /*-------------------------------*/
+        main > section:nth-child(7) > div:nth-child(3) {
+            border-radius: 7%;
+            position: absolute;
+            left: 10%;
+            top: 30%;
+            bottom: 0;
+            right: 0;
+            width: 25%;
+            height: 40%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(7) > div:nth-child(3) > section:nth-child(1) {
+            width: 400%;
+            height: 100%;
+            position: absolute;
+            animation-name: projectSlider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+
+        }
+
+        main > section:nth-child(7) > div:nth-child(3) > section:nth-child(1) > div {
+            width: 25%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(7) > div:nth-child(3) > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            background: url("assets/images/profilePictures/myProfile.jpeg");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(3) > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            background: url("assets/images/g1.png");
+            background-size: 100% 100%;
+            left: 25%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(3) > section:nth-child(1) > div:nth-child(3) {
+            position: absolute;
+            background: url("assets/images/g2.png");
+            background-size: 100% 100%;
+            left: 50%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(3) > section:nth-child(1) > div:nth-child(4) {
+            position: absolute;
+            background: url("assets/images/g3.png");
+            background-size: 100% 100%;
+            left: 75%;
+        }
+
+        /*--------------------------------------*/
+        main > section:nth-child(7) > div:nth-child(4) {
+            border-radius: 7%;
+            position: absolute;
+            left: 65%;
+            top: 30%;
+            bottom: 0;
+            right: 0;
+            width: 25%;
+            height: 40%;
+            overflow: hidden;
+        }
+
+        main > section:nth-child(7) > div:nth-child(4) > section:nth-child(1) {
+            width: 400%;
+            height: 100%;
+            position: absolute;
+            animation-name: projectSlider;
+            animation-duration: 16s;
+            animation-iteration-count: infinite;
+        }
+
+        main > section:nth-child(7) > div:nth-child(4) > section:nth-child(1) > div {
+            width: 25%;
+            height: 100%;
+            position: absolute;
+        }
+
+        main > section:nth-child(7) > div:nth-child(4) > section:nth-child(1) > div:nth-child(1) {
+            position: absolute;
+            background: url("assets/images/g2.png");
+            background-size: 100% 100%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(4) > section:nth-child(1) > div:nth-child(2) {
+            position: absolute;
+            background: url("assets/images/g3.png");
+            background-size: 100% 100%;
+            left: 25%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(4) > section:nth-child(1) > div:nth-child(3) {
+            position: absolute;
+            background: url("assets/images/profilePictures/myProfile.jpeg");
+            background-size: 100% 100%;
+            left: 50%;
+        }
+
+        main > section:nth-child(7) > div:nth-child(4) > section:nth-child(1) > div:nth-child(4) {
+            position: absolute;
+            background: url("assets/images/g1.png");
+            background-size: 100% 100%;
+            left: 75%;
+        }
+
+        @media all and (max-width: 425px) {
+            /*----header-----*/
+            header {
+                display: none;
+            }
+
+            header > nav > ul:nth-child(2) {
+                display: none;
+            }
+
+            header > nav > ul:nth-child(1) {
+                right: 0;
+                left: -24px;
+                top: 13px;
+            }
+
+            header > nav > ul > li.nav {
+                padding-left: 0;
+                font-size: 13px;
+                padding-right: 0;
+            }
+
+            /*--------section 1*/
+            main > section:nth-child(1) > div:nth-child(1) {
+                position: absolute;
+                width: 60%;
+                height: 45%;
+                bottom: 0;
+                left: 13%;
+                top: 0;
+                right: 0;
+                margin: auto;
+                z-index: 10;
+            }
+
+            main > section:nth-child(1) > div:nth-child(2) {
+                left: -14%;
+            }
+
+            main > section:nth-child(1) > div:nth-child(2) > pre:nth-child(1) {
+                font-size: 10px;
+                padding-left: 27px;
+            }
+
+            #divpf {
+                border: 4px solid;
+                position: absolute;
+                width: 60%;
+                height: 45%;
+                bottom: 0;
+                left: 13%;
+                right: 0;
+                top: 0;
+                margin: auto;
+                animation-name: divplay;
+                transform: rotate(360deg);
+                animation-duration: 5s;
+                animation-iteration-count: infinite;
+
+            }
+
+            @keyframes divplay {
+                0% {
+
+                    transform: rotate(-90deg);
+                    border-color: #2222d7;
+
+                }
+                25% {
+                    border-color: red;
+                }
+                50% {
+                    border-color: yellow;
+                }
+                75% {
+                    border-color: white;
+                }
+                100% {
+
+
+                }
+            }#divpf2 {
+                 border: 4px solid;
+                 position: absolute;
+                 width: 60%;
+                 height: 45%;
+                 bottom: 0;
+                 left: 13%;
+                 right: 0;
+                 top: 0;
+                 margin: auto;
+                 animation-name: divplay2;
+                 transform: rotate(-360deg);
+                 animation-duration: 10s;
+                 animation-iteration-count: infinite;
+
+             }
+
+            @keyframes divplay2 {
+                0% {
+
+                    transform: rotate(90deg);
+                    border-color: #2222d7;
+
+                }
+                25% {
+                    border-color: red;
+                }
+                50% {
+                    border-color: yellow;
+                }
+                75% {
+                    border-color: white;
+                }
+                100% {
+
+
+                }
+            }
+            /*------section 2-----*/
+            main > section:nth-child(2) > p:nth-child(4) {
+                position: absolute;
+                top: 54%;
+                letter-spacing: 1px;
+                font-family: 'Josefin Sans', sans-serif;
+                font-size: 23px;
+                padding-left: 17%;
+                padding-right: 1%;
+            }
+
+            main > section:nth-child(2) {
+                width: 100vw;
+                height: 57vh;
+                position: relative;
+                background-color: #273C75;
+            }
+
+            main > section:nth-child(2) > div:nth-child(1) {
+                width: 65%;
+                height: 35%;
+                top: 112px;
+                left: 77px;
+                margin: 0;
+                position: absolute;
+            }
+
+
+            main > section:nth-child(2) > div:nth-child(3) > div > ul {
+                display: none;
+            }
+
+            main > section:nth-child(2) > div:nth-child(2) > h2 {
+                padding-left: 0;
+                font-size: 31px;
+            }
+
+            main > section:nth-child(2) > div:nth-child(2) {
+                width: 50vw;
+                height: 10vh;
+                position: absolute;
+                top: 0;
+                left: 84px;
+                right: 0;
+                margin: auto;
+            }
+
+            /*------section 4-----------*/
+            main > section:nth-child(4) > div:nth-child(2) {
+                border: 2px black;
+                position: absolute;
+                left: 0;
+                top: 20%;
+                width: 100vw;
+                height: 33.5vh;
+            }
+
+            main > section:nth-child(4) > div:nth-child(3) {
+                height: 33.5vh;
+                position: absolute;
+                top: 60%;
+                width: 100vw;
+            }
+
+            main > section:nth-child(4) > div:nth-child(4) {
+                display: none;
+            }
+
+            main > section:nth-child(4) > div:nth-child(2) > h3:nth-child(1) {
+                position: relative;
+                top: -14px;
+                right: 0;
+                left: -45px;
+                width: 35%;
+                margin: auto;
+                font-size: 36px;
+            }
+
+            main > section:nth-child(4) > div:nth-child(3) > h3:nth-child(1) {
+                position: relative;
+                top: -13px;
+                right: 0;
+                left: -21px;
+                width: 25%;
+                margin: auto;
+                font-size: 36px;
+            }
+
+            /*------section  6-----------*/
+            main > section:nth-child(6) > div {
+                width: 100vw;
+                height: 17.5%;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid black;
+
+            }
+
+            main > section:nth-child(6) > div:nth-child(2) {
+                position: static;
+            }
+
+            main > section:nth-child(6) > div:nth-child(3) {
+                position: static;
+            }
+
+            main > section:nth-child(6) > div:nth-child(4) {
+                position: static;
+            }
+
+            main > section:nth-child(6) > div:nth-child(5) {
+                position: static;
+            }
+
+            main > section:nth-child(6) > div:nth-child(6) {
+                position: static;
+            }
+
+            /*-------------section 7--------------*/
+            main > section:nth-child(7) {
+                position: relative;
+                width: 100vw;
+                height: 39vh;
+                background: url(assets/images/gallery.png);
+                background-size: 100% 100%;
+            }
+
+            main > section:nth-child(5) {
+                position: relative;
+                width: 100vw;
+                height: 501px;
+                background: url(assets/images/project.png);
+                background-size: 100% 100%;
+            }
+
+            main > section:nth-child(7) > h1:nth-child(1) {
+                position: absolute;
+                left: 26vw;
+                top: -9px;
+            }
+
+        }
+
+        main > section:nth-child(3) > div:nth-child(4) {
+            position: absolute;
+            width: 24%;
+            height: 18%;
+            border: 3px solid yellow;
+            background-color: blue;
+            top: 24%;
+            left: 13%;
+            border-radius: 32%;
+        }
+
+        main > section:nth-child(3) > div:nth-child(6) {
+            position: absolute;
+            width: 24%;
+            height: 18%;
+            border: 3px solid yellow;
+            background-color: blue;
+            top: 76%;
+            left: 25.5%;
+            border-radius: 32%;
+        }
+
+        main > section:nth-child(3) > hr:nth-child(5) {
+            position: absolute;
+            border: 3px solid gray;
+            top: 59%;
+            left: 13%;
+            width: 64%;
+            /* height: 2px;*/
+        }
+
+        main > section:nth-child(3) > hr:nth-child(7) {
+            position: absolute;
+            border: 3px solid gray;
+            top: 41%;
+            left: 25%;
+            width: 0;
+            height: 17%;
+        }
+
+        main > section:nth-child(3) > hr:nth-child(8) {
+            position: absolute;
+            border: 3px solid gray;
+            top: 59%;
+            left: 35%;
+            width: 0;
+            height: 14%;
+        }
+
+        .text {
+            position: absolute;
+            top: 15%;
+            left: -9px;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #FFF200;
+        }
+
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        main > section:nth-child(5) > div:nth-child(8) {
+            border-radius: 7%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 35%;
+            height: 50%;
+            z-index: 100;
+
+
+        }
+
+        #hover:hover {
+
+            background-color: transparent;
+            transition: all 0.8s;
+            font-family: 'Ubuntu', sans-serif;
+            font-weight: bold;
+            font-size: 20px;
+            text-decoration: underline;
+            padding-left: 35px;
+
+
+        }
+
+        #divhover{
+color: transparent;
+            position: absolute;
+            width: max-content;
+            height: max-content;
+            text-decoration: underline;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+
+
+        }
+        #divhover:hover{
+           color: white;
+
+        }
+
+
+    </style>
+</head>
+<body>
+<header>
+    <nav>
+        <ul>
+            <li class="nav"><a href="#s2">About Me</a></li>
+            <li class="nav"><a href="#s3">Education</a></li>
+            <li class="nav"><a href="#s4">Skills</a></li>
+            <li class="nav"><a href="#s5">Projects</a></li>
+            <li class="nav"><a href="#s6">Activities</a></li>
+            <li class="nav"><a href="#s7">Gallery Page</a></li>
+            <li class="nav"><a href="#f1">Touch On ME</a></li>
+        </ul>
+        <ul>
+            <li><a href="#s1">Home</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section id="s1">
+        <div>
+            <img alt="" src="assets/images/profilePictures/myProfile.jpeg">
+        </div>
+        <div>
+<pre>
+    <h2 id="h2" style="color:#F0F9FF;">       Hi... I am Pathum Kaleesha <br>
+                         Working as a <b>Developer</b>.....</h2>
+</pre>
+        </div>
+        <section>
+
+            <div style="z-index: 150;"><a href="https://twitter.com/Pathum_Kaleesha"><img alt="twitter"
+                                                                                          class="icon"
+                                                                                          src="assets/images/icon/twitter.png">
+            </a>
+            </div>
+
+            <div id="fb_icon" style="background-color:white;border-radius: 35px; z-index: 200;"><a
+                    href="https://www.facebook.com/profile.php?id=100074316473313"><img alt="facebook"
+                                                                                        class="icon"
+                                                                                        src="assets/images/icon/1218127_fb_icon.png">
+            </a>
+            </div>
+
+            <div id="linkedin_icon" style="z-index: 200;"><a
+                    href="https://www.linkedin.com/in/pathum-kaleesha-8ba571225/"><img alt="linkedin" class="icon"
+                                                                                       src="assets/images/icon/4373678_linkedin_logo_logos_icon.png">
+            </a>
+            </div>
+            <div id="divpf"></div>
+            <div id="divpf2"></div>
+        </section>
+
+    </section>
+    <section id="s2">
+
+        <div>
+            <img alt="My Bio Picture" src="assets/images/profilePictures/Bio_pic.jpeg">
+        </div>
+        <div><h2>This is me...</h2></div>
+        <div>
+            <div>
+                <ul>
+                  <!--  <li><img alt="icon" class="bio" src="assets/images/icon/1.png" style="width: 48px; height: 48px;" ></li>
+                    <li><img alt="icon" class="bio" src="assets/images/icon/2.png"></li>
+                    <li><img alt="icon" class="bio" src=""></li>
+                    <li><img alt="icon" class="bio" src=""></li>
+                    <li><img alt="icon" class="bio" src=""></li>-->
+                </ul>
+            </div>
+            <div>
+                <ul>
+                    <li><h4> Name : Pathum kaleesha</h4></li>
+                    <li><h4>Age   : 21 years</h4></li>
+                    <li><h4>Mail : pathumkaleesha618@gmail.com</h4></li>
+                    <li><h4>Contact : +94-777921473</h4></li>
+                    <li><h4>Address : Galle, Southern Province, Sri Lanka</h4></li>
+                </ul>
+            </div>
+
+        </div>
+        <p>
+            Hello, I am Kaleesha.I'm still learning software engineering at Institute Of Software Engineering
+            (IJSE). I 'm from Galle, Sri Lanka. I can work with programming languages like 'Java','HTML' , style
+            sheet language like 'CSS', design tools like 'JavaFX' and framework like 'Hibernate'.
+        </p>
+    </section>
+    <section id="s3">
+        <h1 style="font-size: 48px; position:absolute;">Education</h1>
+        <div><img alt="" src="assets/images/img.png"></div>
+        <div><!--<img alt="" src="assets/images/Education.png">--></div>
+        <div>
+            <p class="text">
+                G/ Vidyaloka College
+                <br>
+                (2006 - 2019)
+            </p>
+        </div>
+        <hr>
+        <div>
+            <p class="text">
+                Institute of java Software Engineering
+                <br>
+                (2021 - Present)
+            </p>
+        </div>
+        <hr>
+        <hr>
+    </section>
+    <section id="s4">
+        <h1 style="font-size: 48px; ;">Skills</h1>
+        <div>
+            <h3>Languages</h3>
+            <div>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div>
+            <h3>Tools</h3>
+            <div>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+            <div>
+                <section>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </section>
+            </div>
+            <div></div>
+            <div></div>
+            <div></div>
+
+        </div>
+        <div></div>
+
+    </section>
+    <section id="s5">
+        <h1 style="font-size: 48px; ">Projects
+        </h1>
+        <div>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+
+        </div>
+        <div>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </div>
+        <div>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div id="hover">
+            <a id="divhover" href="projectsAndAssigmnets.html"  target="_blank">Projects & Assigments <br> <br>View more...</a>
+
+        </div>
+    </section>
+    <section id="s6">
+        <h1 style="font-size: 48px;">Activities</h1>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </section>
+    <section id="s7">
+        <h1 style="font-size: 48px;">Gallery</h1>
+        <div>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </div>
+        <div>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </div>
+        <div>
+            <section>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </section>
+        </div>
+
+    </section>
+</main>
+<footer id="f1">
+    <address id="touchOnMe">
+        <br>
+        <div>
+            <h1 style="font-size: 48px;">Contact</h1>
+
+            <img alt="mail" class="contact" src="assets/images/icon/mail.png"><a class="test"
+                                                                                 href="mailto:pathumkaleesha618@gmail.com"
+        >pathumkaleesha618@gmail.com</a>
+            <br>
+            <img alt="whatsapp" class="contact" src="assets/images/icon/whatsapp.png"><a class="test"
+                                                                                         href="https://api.whatsapp.com/send/?phone=94777921473&text&app_absent=0" target="_blank">+94777921473</a>
+            <br>
+            <img alt="whatsapp" class="contact" src="assets/images/icon/whatsapp.png"> <a class="test"
+                                                                                          href="https://goo.gl/maps/oGvhRKMzRvapLh2V9">Galle,Southern
+            Province,Sri Lanka</a>
+        </div>
+        <div id="kaleesha">
+            <img align="right" alt="logo" id="logo" src="assets/images/kaleesha.png">
+        </div>
+    </address>
+</footer>
+</body>
+</html>
