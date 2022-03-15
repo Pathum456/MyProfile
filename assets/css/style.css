@@ -171,3 +171,70 @@
     top: 69%;
     margin: auto;
 }
+/*---------------*/
+#spa{
+    position: absolute;
+    left: 32%;
+    top: 70%;
+    width: 20%;
+    height: 35%;
+    border: 1px solid green;
+    background-size: 100%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+
+#spa:hover {
+    left: 29%;
+    top: 67%;
+    width: 25%;
+    height: 40%;
+    transition: all 0.8s;
+    border: 5px solid yellow;
+}
+#prj:hover{
+    color: black;
+}
+
+#prj{
+    font-size: 35px;
+    color: transparent;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+#prj:hover{
+    color: blue;
+}
+#j2view {
+    font-size: 28px;
+    color: transparent;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 69%;
+    margin: auto;
+}
+#dow{
+    font-size: 28px;
+    color: transparent;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 69%;
+    margin: auto;
+}
+#dow:hover{
+    color: blue;
+}
