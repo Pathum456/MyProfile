@@ -71,7 +71,7 @@
     left: 5%;
     color: white;
 }
-#spa{
+#jc1{
     position: absolute;
     left: 5%;
     top: 360.5%;
@@ -82,7 +82,7 @@
     border-top-left-radius: 20%;
     border-bottom-right-radius: 20%;
 }
-#spa:hover {
+#jc1:hover {
     left: 3%;
     top: 357.5%;
     width: 25%;
@@ -109,6 +109,57 @@
     color: blue;
 }
 #jview {
+    font-size: 28px;
+    color: transparent;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 69%;
+    margin: auto;
+}
+/*------------------*/
+#jc2{
+    position: absolute;
+    left: 32%;
+    top: 360.5%;
+    width: 20%;
+    height: 35%;
+    border: 1px solid green;
+    background-size: 100%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+}
+#jc2:hover {
+    left: 29%;
+    top: 357.5%;
+    width: 25%;
+    height: 40%;
+    transition: all 0.8s;
+    border: 5px solid yellow;
+}
+#jsc2:hover{
+    color: white;
+}
+
+#jsc2{
+    font-size: 35px;
+    color: transparent;
+    width: max-content;
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+#j2view:hover{
+    color: blue;
+}
+#j2view {
     font-size: 28px;
     color: transparent;
     width: max-content;
